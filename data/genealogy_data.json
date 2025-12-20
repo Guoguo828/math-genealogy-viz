@@ -1,0 +1,290 @@
+{
+    "121329": {
+        "id": "121329",
+        "name": "Jan Drewes Achenbach",
+        "school": "Stanford University",
+        "year": 1962,
+        "dissertation": "Wave Propagation in a Three-Parameter Viscoelastic Medium",
+        "advisors": [
+            {
+                "id": "121205",
+                "name": "Chi Chang Chao"
+            }
+        ]
+    },
+    "121205": {
+        "id": "121205",
+        "name": "Chi Chang Chao",
+        "school": "Columbia University",
+        "year": 1958,
+        "dissertation": "Dynamical Response of an Elastic Half-Space to Tangential Surface Loadings",
+        "advisors": [
+            {
+                "id": "121102",
+                "name": "Bruno  Boley"
+            }
+        ]
+    },
+    "121102": {
+        "id": "121102",
+        "name": "Bruno  Boley",
+        "school": "Polytechnic University",
+        "year": 1946,
+        "dissertation": "Numerical Procedures for the Calculation of Elastic Instability",
+        "advisors": [
+            {
+                "id": "121049",
+                "name": "Nicholas John Hoff"
+            }
+        ]
+    },
+    "121049": {
+        "id": "121049",
+        "name": "Nicholas John Hoff",
+        "school": "Stanford University",
+        "year": 1942,
+        "dissertation": "Stresses in a Space Curved Bar Reinforcing the Edge Cut-out in a Monocoque Fuselage",
+        "advisors": [
+            {
+                "id": "91206",
+                "name": "Stephen Prokofyevich Timoshenko"
+            }
+        ]
+    },
+    "91206": {
+        "id": "91206",
+        "name": "Stephen Prokofyevich Timoshenko",
+        "school": "National Technical University of Ukraine “Kyiv Polytechnic Institute”",
+        "year": 1907,
+        "dissertation": "",
+        "advisors": [
+            {
+                "id": "91182",
+                "name": "Viktor Lvovich Kirpichov"
+            },
+            {
+                "id": "51374",
+                "name": "Ludwig  Prandtl"
+            }
+        ]
+    },
+    "91182": {
+        "id": "91182",
+        "name": "Viktor Lvovich Kirpichov",
+        "school": "St. Petersburg State Polytechnic University",
+        "year": 1876,
+        "dissertation": "",
+        "advisors": [
+            {
+                "id": "46968",
+                "name": "Gustav Robert Kirchhoff"
+            }
+        ]
+    },
+    "51374": {
+        "id": "51374",
+        "name": "Ludwig  Prandtl",
+        "school": "Ludwig-Maximilians-Universität München",
+        "year": 1899,
+        "dissertation": "Kipp-Erscheinungen, Ein Fall von instabilem elastischem Gleichgewicht",
+        "advisors": [
+            {
+                "id": "71565",
+                "name": "August Otto Föppl"
+            }
+        ]
+    },
+    "46968": {
+        "id": "46968",
+        "name": "Gustav Robert Kirchhoff",
+        "school": "Universität Königsberg",
+        "year": 1847,
+        "dissertation": "Ueber den Durchgang eines elektrischen Stromes durch eine Ebene, insbesondere durch eine kreisförmige.",
+        "advisors": [
+            {
+                "id": "18600",
+                "name": "Franz Ernst Neumann"
+            },
+            {
+                "id": "57706",
+                "name": "Friedrich Julius Richelot"
+            }
+        ]
+    },
+    "71565": {
+        "id": "71565",
+        "name": "August Otto Föppl",
+        "school": "Universität Leipzig",
+        "year": 1886,
+        "dissertation": "Mathematische Theorie der Bau-Constructionen: Theorie des Fachwerks;\r\nTheorie des Gewölbes",
+        "advisors": [
+            {
+                "id": "9712",
+                "name": "Heinrich  Bruns"
+            },
+            {
+                "id": "7401",
+                "name": "C. Felix (Christian) Klein"
+            }
+        ]
+    },
+    "18600": {
+        "id": "18600",
+        "name": "Franz Ernst Neumann",
+        "school": "Universität Berlin",
+        "year": 1825,
+        "dissertation": "De lege zonarum principio evolutionis systematum crystallinorum",
+        "advisors": [
+            {
+                "id": "66319",
+                "name": "Christian Samuel Weiss"
+            }
+        ]
+    },
+    "57706": {
+        "id": "57706",
+        "name": "Friedrich Julius Richelot",
+        "school": "Universität Königsberg",
+        "year": 1831,
+        "dissertation": "De resolutione algebraica aequationis X^257=1, sive de divisione circuli per bisectionem anguli septies repetitam in partes 257 inter se aequales commentatio coronata",
+        "advisors": [
+            {
+                "id": "15635",
+                "name": "Carl Gustav Jacob Jacobi"
+            }
+        ]
+    },
+    "9712": {
+        "id": "9712",
+        "name": "Heinrich  Bruns",
+        "school": "Universität Berlin",
+        "year": 1871,
+        "dissertation": "De proprietate quadam functionis potentialis corporum homogeneorum",
+        "advisors": [
+            {
+                "id": "7486",
+                "name": "Karl Theodor Wilhelm Weierstraß"
+            },
+            {
+                "id": "18331",
+                "name": "Ernst Eduard Kummer"
+            }
+        ]
+    },
+    "7401": {
+        "id": "7401",
+        "name": "C. Felix (Christian) Klein",
+        "school": "Rheinische Friedrich-Wilhelms-Universität Bonn",
+        "year": 1868,
+        "dissertation": "Ueber die Transformation der allgemeinen Gleichung des zweiten Grades zwischen Linien-Coordinaten auf eine canonische Form",
+        "advisors": [
+            {
+                "id": "7402",
+                "name": "Julius  Plücker"
+            },
+            {
+                "id": "19964",
+                "name": "Rudolf Otto Sigismund Lipschitz"
+            }
+        ]
+    },
+    "66319": {
+        "id": "66319",
+        "name": "Christian Samuel Weiss",
+        "school": "Universität Leipzig",
+        "year": 1801,
+        "dissertation": "De notionibus rigidi et fluidi accurate definiendis",
+        "advisors": [
+            {
+                "id": "124285",
+                "name": "Abraham Gottlob Werner"
+            },
+            {
+                "id": "124286",
+                "name": "René Just Haüy"
+            }
+        ]
+    },
+    "15635": {
+        "id": "15635",
+        "name": "Carl Gustav Jacob Jacobi",
+        "school": "Humboldt-Universität zu Berlin",
+        "year": 1825,
+        "dissertation": "Disquisitiones Analyticae de Fractionibus Simplicibus",
+        "advisors": [
+            {
+                "id": "41423",
+                "name": "Enno Heeren Dirksen"
+            }
+        ]
+    },
+    "7486": {
+        "id": "7486",
+        "name": "Karl Theodor Wilhelm Weierstraß",
+        "school": "Universität Münster",
+        "year": 1841,
+        "dissertation": "Über die Entwicklung der Modularfunktionen",
+        "advisors": [
+            {
+                "id": "29458",
+                "name": "Christoph  Gudermann"
+            }
+        ]
+    },
+    "18331": {
+        "id": "18331",
+        "name": "Ernst Eduard Kummer",
+        "school": "Martin-Luther-Universität Halle-Wittenberg",
+        "year": 1831,
+        "dissertation": "De cosinuum et sinuum potestatibus secundum cosinus et sinus arcuum multiplicium evolvendis",
+        "advisors": [
+            {
+                "id": "25484",
+                "name": "Heinrich Ferdinand Scherk"
+            }
+        ]
+    },
+    "7402": {
+        "id": "7402",
+        "name": "Julius  Plücker",
+        "school": "Philipps-Universität Marburg",
+        "year": 1823,
+        "dissertation": "Generalem analyeseos applicationem ad ea quae geometriae altioris et mechanicae basis et fundamenta sunt e serie Tayloria deducit",
+        "advisors": [
+            {
+                "id": "29642",
+                "name": "Christian Ludwig Gerling"
+            }
+        ]
+    },
+    "19964": {
+        "id": "19964",
+        "name": "Rudolf Otto Sigismund Lipschitz",
+        "school": "Universität Berlin",
+        "year": 1853,
+        "dissertation": "Determinatio status magnetici viribus inducentibus commoti in ellipsoide",
+        "advisors": [
+            {
+                "id": "17946",
+                "name": "Gustav Peter Lejeune Dirichlet"
+            },
+            {
+                "id": "47064",
+                "name": "Martin  Ohm"
+            }
+        ]
+    },
+    "124285": {
+        "id": "124285",
+        "name": "Abraham Gottlob Werner",
+        "school": "Universität Leipzig",
+        "year": 1774,
+        "dissertation": "Von den äußerlichen Kennzeichen der Fossilien",
+        "advisors": [
+            {
+                "id": "124490",
+                "name": "Johann Carl Gehler"
+            }
+        ]
+    }
+}

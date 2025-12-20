@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics Genealogy Visualization</title>
+    <!-- 1. 新增：引入 Vis.js 库 -->
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Mathematics Genealogy Visualization</h1>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search for a mathematician...">
+            <button id="search-btn">Search</button>
+        </div>
+    </header>
+    <main>
+        <section id="genealogy-tree">
+            <!-- 2. 确保容器 ID 是 mynetwork (与 CSS 对应) -->
+            <div id="mynetwork"></div>
+            <div id="legend">
+                <div class="legend-item">
+                    <span class="color-box" style="background-color: #FFB7B2; border-color: #FF6F61;"></span>
+                    <span>&lt; 1800</span>
+                </div>
+                <div class="legend-item">
+                    <span class="color-box" style="background-color: #FFDAC1; border-color: #FF9F80;"></span>
+                    <span>1800 - 1899</span>
+                </div>
+                <div class="legend-item">
+                    <span class="color-box" style="background-color: #E2F0CB; border-color: #88B04B;"></span>
+                    <span>1900 - 1949</span>
+                </div>
+                <div class="legend-item">
+                    <span class="color-box" style="background-color: #B5EAD7; border-color: #009B77;"></span>
+                    <span>1950 - 1999</span>
+                </div>
+                <div class="legend-item">
+                    <span class="color-box" style="background-color: #C7CEEA; border-color: #6B5B95;"></span>
+                    <span>&ge; 2000</span>
+                </div>
+                <div class="legend-item">
+                    <span class="color-box" style="background-color: #e0e0e0; border-color: #bdbdbd;"></span>
+                    <span>Unknown</span>
+                </div>
+            </div>
+        </section>
+        <section id="person-details">
+            <h2>Person Details</h2>
+            <div id="details-container">
+                <!-- Details of the selected person will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <!-- 3. 脚本放在 body 结束前 -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
