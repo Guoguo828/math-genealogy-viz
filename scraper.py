@@ -83,13 +83,46 @@ class MathGenealogyScraper:
                     except IndexError:
                         continue
 
+        # 5. Students (Get up to 3)
+        students = []
+        tables = main_content.find_all('table')
+        for table in tables:
+            headers = [th.get_text(strip=True) for th in table.find_all('th')]
+            if "Name" in headers and "School" in headers:
+                rows = table.find_all('tr')
+                for row in rows[1:]:
+                    if len(students) >= 3:
+                        break
+                    
+                    cols = row.find_all('td')
+                    if not cols:
+                        continue
+                        
+                    name_col = cols[0]
+                    link = name_col.find('a')
+                    if link:
+                        stu_name = link.get_text(strip=True)
+                        href = link.get('href')
+                        if href and 'id.php?id=' in href:
+                            try:
+                                stu_id = href.split('id=')[1].split('&')[0]
+                                students.append({
+                                    'id': stu_id, 
+                                    'name': stu_name
+                                })
+                            except:
+                                continue
+                if len(students) >= 3:
+                    break
+
         return {
             'id': scholar_id,
             'name': name,
             'school': school,
             'year': year,
             'dissertation': dissertation,
-            'advisors': advisors
+            'advisors': advisors,
+            'students': students
         }
 
     def build_tree(self):
@@ -135,6 +168,6 @@ class MathGenealogyScraper:
 
 if __name__ == "__main__":
     start_scholar_id = "121329"
-    scraper = MathGenealogyScraper(start_scholar_id, max_count=20)
+    scraper = MathGenealogyScraper(start_scholar_id, max_count=60)
     scraper.build_tree()
     scraper.save_data()

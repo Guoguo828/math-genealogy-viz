@@ -10,14 +10,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const edges = [];
             const addedNodes = new Set();
 
-            // 辅助函数：根据年份获取颜色
+            // 辅助函数：根据年份获取颜色 (优化版)
             function getColorByYear(year) {
                 if (!year) return { background: '#e0e0e0', border: '#bdbdbd' }; // 灰色：未知年份
-                if (year < 1800) return { background: '#FFB7B2', border: '#FF6F61' }; // 红色系：1800前
-                if (year < 1900) return { background: '#FFDAC1', border: '#FF9F80' }; // 橙色系：19世纪
-                if (year < 1950) return { background: '#E2F0CB', border: '#88B04B' }; // 绿色系：20世纪上半叶
-                if (year < 2000) return { background: '#B5EAD7', border: '#009B77' }; // 青色系：20世纪下半叶
-                return { background: '#C7CEEA', border: '#6B5B95' }; // 紫色系：2000后
+                if (year < 1700) return { background: '#ff9a9e', border: '#ff758c' }; // 红色系：1700前
+                if (year < 1800) return { background: '#fad0c4', border: '#f6a69f' }; // 橙红系：18世纪
+                if (year < 1900) return { background: '#fbc2eb', border: '#d896cc' }; // 紫粉系：19世纪
+                if (year < 1950) return { background: '#a18cd1', border: '#8571b3' }; // 紫色系：20世纪上半叶
+                if (year < 2000) return { background: '#84fab0', border: '#6bd692' }; // 绿色系：20世纪下半叶
+                return { background: '#8fd3f4', border: '#6bb5d6' }; // 蓝色系：2000后
             }
 
             for (const [id, person] of Object.entries(rawData)) {
@@ -74,6 +75,41 @@ document.addEventListener('DOMContentLoaded', function() {
                 edges: new vis.DataSet(edges)
             };
 
+            // 优化2: 计算统计数据
+            function calculateStats() {
+                const totalScholars = nodes.length;
+                let minYear = Infinity;
+                const schoolCounts = {};
+
+                nodes.forEach(node => {
+                    // 从 rawData 获取更准确的年份和学校信息
+                    const person = rawData[node.id];
+                    if (person) {
+                        if (person.year) {
+                            minYear = Math.min(minYear, person.year);
+                        }
+                        if (person.school) {
+                            schoolCounts[person.school] = (schoolCounts[person.school] || 0) + 1;
+                        }
+                    }
+                });
+
+                // 找到人数最多的学校
+                let topSchool = "N/A";
+                let maxCount = 0;
+                for (const [school, count] of Object.entries(schoolCounts)) {
+                    if (count > maxCount) {
+                        maxCount = count;
+                        topSchool = school;
+                    }
+                }
+
+                document.getElementById('stat-total').textContent = totalScholars;
+                document.getElementById('stat-year').textContent = minYear === Infinity ? "N/A" : minYear;
+                document.getElementById('stat-school').textContent = topSchool;
+            }
+            calculateStats();
+
             const options = {
                 nodes: {
                     shape: 'dot',
@@ -121,6 +157,130 @@ document.addEventListener('DOMContentLoaded', function() {
             // 4. 渲染图表
             const network = new vis.Network(container, data, options);
 
+            // 优化1: 控制栏功能
+            document.getElementById('fit-btn').addEventListener('click', () => {
+                network.fit({ animation: true });
+            });
+
+            document.getElementById('export-btn').addEventListener('click', () => {
+                const canvas = container.querySelector('canvas');
+                const link = document.createElement('a');
+                link.download = 'genealogy-tree.png';
+                link.href = canvas.toDataURL();
+                link.click();
+            });
+
+            // 优化4: 布局切换
+            let currentDirection = "DU"; // 默认 Down-Up
+            document.getElementById('layout-btn').addEventListener('click', () => {
+                // 切换方向: DU -> UD -> LR -> RL -> DU
+                if (currentDirection === "DU") currentDirection = "UD";
+                else if (currentDirection === "UD") currentDirection = "LR";
+                else if (currentDirection === "LR") currentDirection = "RL";
+                else currentDirection = "DU";
+
+                options.layout.hierarchical.direction = currentDirection;
+                network.setOptions(options);
+                network.fit({ animation: true });
+            });
+
+            const resetBtn = document.getElementById('reset-highlight-btn');
+            resetBtn.addEventListener('click', () => {
+                resetHighlight();
+            });
+
+            // 优化3: 智能高亮 (Lineage Tracing)
+            let highlightActive = false;
+
+            function highlightLineage(selectedNodeId) {
+                const allNodes = data.nodes.get();
+                const allEdges = data.edges.get();
+                
+                // 找出所有相关的节点（祖先和后代）
+                // 这里简化处理：只高亮直接连接的节点，或者遍历整个图
+                // 为了更好的效果，我们遍历找出所有上下游
+                
+                const connectedNodeIds = new Set([selectedNodeId]);
+                const connectedEdgeIds = new Set();
+
+                // 向上追溯 (Advisors)
+                const queueUp = [selectedNodeId];
+                while(queueUp.length > 0) {
+                    const curr = queueUp.pop();
+                    // 找到指向 curr 的边 (from student to advisor, so edge.from == curr)
+                    // 我们的边是 from student to advisor
+                    const outgoingEdges = allEdges.filter(e => e.from === curr);
+                    outgoingEdges.forEach(e => {
+                        connectedEdgeIds.add(e.id);
+                        if (!connectedNodeIds.has(e.to)) {
+                            connectedNodeIds.add(e.to);
+                            queueUp.push(e.to);
+                        }
+                    });
+                }
+
+                // 向下追溯 (Students)
+                const queueDown = [selectedNodeId];
+                while(queueDown.length > 0) {
+                    const curr = queueDown.pop();
+                    // 找到指向 curr 的边 (edge.to == curr)
+                    const incomingEdges = allEdges.filter(e => e.to === curr);
+                    incomingEdges.forEach(e => {
+                        connectedEdgeIds.add(e.id);
+                        if (!connectedNodeIds.has(e.from)) {
+                            connectedNodeIds.add(e.from);
+                            queueDown.push(e.from);
+                        }
+                    });
+                }
+
+                // 更新节点样式
+                const updateArray = [];
+                allNodes.forEach(node => {
+                    if (connectedNodeIds.has(node.id)) {
+                        updateArray.push({
+                            id: node.id, 
+                            color: { 
+                                background: node.originalColor ? node.originalColor.background : undefined,
+                                border: node.originalColor ? node.originalColor.border : undefined
+                            },
+                            opacity: 1
+                        });
+                    } else {
+                        // 保存原始颜色以便恢复
+                        if (!node.originalColor) {
+                            node.originalColor = node.color;
+                        }
+                        updateArray.push({
+                            id: node.id, 
+                            color: { background: '#eeeeee', border: '#dddddd' },
+                            opacity: 0.1
+                        });
+                    }
+                });
+                data.nodes.update(updateArray);
+                
+                highlightActive = true;
+                resetBtn.style.display = 'inline-block';
+            }
+
+            function resetHighlight() {
+                if (!highlightActive) return;
+                
+                const allNodes = data.nodes.get();
+                const updateArray = allNodes.map(node => {
+                    return {
+                        id: node.id,
+                        color: node.originalColor || node.color,
+                        opacity: 1
+                    };
+                });
+                data.nodes.update(updateArray);
+                
+                highlightActive = false;
+                resetBtn.style.display = 'none';
+            }
+
             // --- 功能函数：更新详情面板 ---
             function updateDetails(nodeId) {
                 const person = rawData[nodeId];
@@ -139,6 +299,13 @@ document.addEventListener('DOMContentLoaded', function() {
                             person.advisors.map(a => `<li>${a.name}</li>`).join('') + 
                             '</ul>';
                     }
+
+                    let studentsHtml = '';
+                    if (person.students && person.students.length > 0) {
+                        studentsHtml = '<h3>Students (Top 3):</h3><ul>' + 
+                            person.students.map(s => `<li>${s.name}</li>`).join('') + 
+                            '</ul>';
+                    }
                     
                     content = `
                         <h2>${person.name}</h2>
@@ -148,13 +315,28 @@ document.addEventListener('DOMContentLoaded', function() {
                             ${year}
                         </div>
                         ${dissertation}
+                        <div style="margin-top: 10px;">
+                            <a href="https://www.mathgenealogy.org/id.php?id=${person.id}" target="_blank" class="external-link-btn">
+                                🔗 View on Math Genealogy Project
+                            </a>
+                        </div>
                         ${advisorsHtml}
+                        ${studentsHtml}
                     `;
                 } else {
                     // 如果是未爬取的导师节点，尝试从 vis data 中获取基本信息
                     const nodeData = data.nodes.get(nodeId);
                     if (nodeData) {
-                            content = `<h2>${nodeData.label}</h2><p><strong>ID:</strong> ${nodeId}</p><p><i>(Detailed data not available)</i></p>`;
+                            content = `
+                                <h2>${nodeData.label}</h2>
+                                <p><strong>ID:</strong> ${nodeId}</p>
+                                <div style="margin-top: 10px;">
+                                    <a href="https://www.mathgenealogy.org/id.php?id=${nodeId}" target="_blank" class="external-link-btn">
+                                        🔗 View on Math Genealogy Project
+                                    </a>
+                                </div>
+                                <p><i>(Detailed data not available)</i></p>
+                            `;
                     }
                 }
                 detailsContainer.innerHTML = content;
@@ -177,6 +359,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     const nodeId = params.nodes[0];
                     updateDetails(nodeId);
                     focusNode(nodeId);
+                    highlightLineage(nodeId); // 触发高亮
+                } else {
+                    // 点击空白处重置
+                    resetHighlight();
                 }
             });
 

@@ -45,6 +45,90 @@ h1 {
     background-color: #0056b3;
 }
 
+/* Controls */
+#controls-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.control-btn {
+    padding: 6px 12px;
+    margin: 0 5px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.control-btn:hover {
+    background-color: #5a6268;
+}
+
+#layout-btn {
+    background-color: #17a2b8;
+}
+#layout-btn:hover {
+    background-color: #138496;
+}
+
+#reset-highlight-btn {
+    background-color: #dc3545;
+}
+#reset-highlight-btn:hover {
+    background-color: #c82333;
+}
+
+.external-link-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.external-link-btn:hover {
+    background-color: #218838;
+}
+
+/* Stats Panel */
+#stats-panel {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border: 1px solid #e0e0e0;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-label {
+    display: block;
+    font-size: 12px;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stat-value {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;

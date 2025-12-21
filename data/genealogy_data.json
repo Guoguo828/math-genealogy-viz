@@ -10,6 +10,20 @@
                 "id": "121205",
                 "name": "Chi Chang Chao"
             }
+        ],
+        "students": [
+            {
+                "id": "122132",
+                "name": "Ahn, Veomseok"
+            },
+            {
+                "id": "121358",
+                "name": "Aldrin, John"
+            },
+            {
+                "id": "121341",
+                "name": "Arias, Irene"
+            }
         ]
     },
     "121205": {
@@ -22,6 +36,12 @@
             {
                 "id": "121102",
                 "name": "Bruno  Boley"
+            }
+        ],
+        "students": [
+            {
+                "id": "121329",
+                "name": "Achenbach, Jan"
             }
         ]
     },
@@ -36,6 +56,16 @@
                 "id": "121049",
                 "name": "Nicholas John Hoff"
             }
+        ],
+        "students": [
+            {
+                "id": "187871",
+                "name": "Beskos, Dmitri"
+            },
+            {
+                "id": "121205",
+                "name": "Chao, Chi"
+            }
         ]
     },
     "121049": {
@@ -48,6 +78,20 @@
             {
                 "id": "91206",
                 "name": "Stephen Prokofyevich Timoshenko"
+            }
+        ],
+        "students": [
+            {
+                "id": "307222",
+                "name": "Besseling, Hans"
+            },
+            {
+                "id": "121102",
+                "name": "Boley, Bruno"
+            },
+            {
+                "id": "147062",
+                "name": "Eringen, Ahmed Cemal"
             }
         ]
     },
@@ -66,6 +110,20 @@
                 "id": "51374",
                 "name": "Ludwig  Prandtl"
             }
+        ],
+        "students": [
+            {
+                "id": "121262",
+                "name": "Allan, George"
+            },
+            {
+                "id": "122101",
+                "name": "Anderson, Carl"
+            },
+            {
+                "id": "122527",
+                "name": "Bergman, Elmer"
+            }
         ]
     },
     "91182": {
@@ -79,6 +137,16 @@
                 "id": "46968",
                 "name": "Gustav Robert Kirchhoff"
             }
+        ],
+        "students": [
+            {
+                "id": "172027",
+                "name": "Galerkin, Boris"
+            },
+            {
+                "id": "91206",
+                "name": "Timoshenko, Stephen"
+            }
         ]
     },
     "51374": {
@@ -91,6 +159,20 @@
             {
                 "id": "71565",
                 "name": "August Otto Föppl"
+            }
+        ],
+        "students": [
+            {
+                "id": "116267",
+                "name": "Adler, Max"
+            },
+            {
+                "id": "114804",
+                "name": "Anthes, Hugo"
+            },
+            {
+                "id": "116268",
+                "name": "Berliner, Sigfrid"
             }
         ]
     },
@@ -109,6 +191,20 @@
                 "id": "57706",
                 "name": "Friedrich Julius Richelot"
             }
+        ],
+        "students": [
+            {
+                "id": "58044",
+                "name": "Adrian, Theodor"
+            },
+            {
+                "id": "141863",
+                "name": "Aron, Hermann"
+            },
+            {
+                "id": "91182",
+                "name": "Kirpichov, Viktor"
+            }
         ]
     },
     "71565": {
@@ -126,6 +222,20 @@
                 "id": "7401",
                 "name": "C. Felix (Christian) Klein"
             }
+        ],
+        "students": [
+            {
+                "id": "19535",
+                "name": "Föttinger, Hermann"
+            },
+            {
+                "id": "51374",
+                "name": "Prandtl, Ludwig"
+            },
+            {
+                "id": "122501",
+                "name": "Thoma, Dieter"
+            }
         ]
     },
     "18600": {
@@ -139,6 +249,20 @@
                 "id": "66319",
                 "name": "Christian Samuel Weiss"
             }
+        ],
+        "students": [
+            {
+                "id": "18607",
+                "name": "Clebsch, Rudolf"
+            },
+            {
+                "id": "46968",
+                "name": "Kirchhoff, Gustav"
+            },
+            {
+                "id": "51470",
+                "name": "Meyer, Oskar"
+            }
         ]
     },
     "57706": {
@@ -151,6 +275,20 @@
             {
                 "id": "15635",
                 "name": "Carl Gustav Jacob Jacobi"
+            }
+        ],
+        "students": [
+            {
+                "id": "46968",
+                "name": "Kirchhoff, Gustav"
+            },
+            {
+                "id": "66477",
+                "name": "Meyer, Joannes"
+            },
+            {
+                "id": "32858",
+                "name": "Neumann, Carl"
             }
         ]
     },
@@ -169,6 +307,20 @@
                 "id": "18331",
                 "name": "Ernst Eduard Kummer"
             }
+        ],
+        "students": [
+            {
+                "id": "54812",
+                "name": "Carius, Fritz"
+            },
+            {
+                "id": "172553",
+                "name": "Crasselt, Hermann"
+            },
+            {
+                "id": "169374",
+                "name": "Danckwortt, Albert"
+            }
         ]
     },
     "7401": {
@@ -185,6 +337,20 @@
             {
                 "id": "19964",
                 "name": "Rudolf Otto Sigismund Lipschitz"
+            }
+        ],
+        "students": [
+            {
+                "id": "7450",
+                "name": "Behrens, Wilhelm"
+            },
+            {
+                "id": "217696",
+                "name": "Berger, Gustav"
+            },
+            {
+                "id": "217697",
+                "name": "Besser, Rudolf"
             }
         ]
     },
@@ -203,6 +369,16 @@
                 "id": "124286",
                 "name": "René Just Haüy"
             }
+        ],
+        "students": [
+            {
+                "id": "18600",
+                "name": "Neumann, Franz"
+            },
+            {
+                "id": "233616",
+                "name": "Rose, Gustav"
+            }
         ]
     },
     "15635": {
@@ -215,6 +391,20 @@
             {
                 "id": "41423",
                 "name": "Enno Heeren Dirksen"
+            }
+        ],
+        "students": [
+            {
+                "id": "174251",
+                "name": "Borchardt, Karl"
+            },
+            {
+                "id": "15654",
+                "name": "Gordan, Paul"
+            },
+            {
+                "id": "76359",
+                "name": "Hermes, Oswald"
             }
         ]
     },
@@ -229,6 +419,20 @@
                 "id": "29458",
                 "name": "Christoph  Gudermann"
             }
+        ],
+        "students": [
+            {
+                "id": "58044",
+                "name": "Adrian, Theodor"
+            },
+            {
+                "id": "40979",
+                "name": "Berner, Theodor"
+            },
+            {
+                "id": "40980",
+                "name": "Biermann, Wilhelm"
+            }
         ]
     },
     "18331": {
@@ -242,6 +446,20 @@
                 "id": "25484",
                 "name": "Heinrich Ferdinand Scherk"
             }
+        ],
+        "students": [
+            {
+                "id": "58045",
+                "name": "August, Friedrich"
+            },
+            {
+                "id": "58046",
+                "name": "Bachmann, Friedrich"
+            },
+            {
+                "id": "18598",
+                "name": "Bachmann, Paul"
+            }
         ]
     },
     "7402": {
@@ -254,6 +472,20 @@
             {
                 "id": "29642",
                 "name": "Christian Ludwig Gerling"
+            }
+        ],
+        "students": [
+            {
+                "id": "137028",
+                "name": "Beer, August"
+            },
+            {
+                "id": "190351",
+                "name": "Hittorf, Johann"
+            },
+            {
+                "id": "7401",
+                "name": "Klein, C. Felix"
             }
         ]
     },
@@ -272,6 +504,20 @@
                 "id": "47064",
                 "name": "Martin  Ohm"
             }
+        ],
+        "students": [
+            {
+                "id": "55027",
+                "name": "Emmerich, Albrecht"
+            },
+            {
+                "id": "7401",
+                "name": "Klein, C. Felix"
+            },
+            {
+                "id": "46992",
+                "name": "Knoblauch, Oscar"
+            }
         ]
     },
     "124285": {
@@ -284,6 +530,1002 @@
             {
                 "id": "124490",
                 "name": "Johann Carl Gehler"
+            }
+        ],
+        "students": [
+            {
+                "id": "158042",
+                "name": "Mohs, Carl"
+            },
+            {
+                "id": "66319",
+                "name": "Weiss, Christian"
+            }
+        ]
+    },
+    "124286": {
+        "id": "124286",
+        "name": "René Just Haüy",
+        "school": "",
+        "year": null,
+        "dissertation": "",
+        "advisors": [],
+        "students": [
+            {
+                "id": "66319",
+                "name": "Weiss, Christian"
+            }
+        ]
+    },
+    "41423": {
+        "id": "41423",
+        "name": "Enno Heeren Dirksen",
+        "school": "Georg-August-Universität Göttingen",
+        "year": 1820,
+        "dissertation": "Historiae progressuum instrumentorum mensurae angulorum accuratiori interserventium inde a Tob. Meyeri temporibus ad umbratione non de artificio multiplicationis",
+        "advisors": [
+            {
+                "id": "57659",
+                "name": "Johann Tobias Mayer"
+            },
+            {
+                "id": "57667",
+                "name": "Bernhard Friedrich Thibaut"
+            }
+        ],
+        "students": [
+            {
+                "id": "40976",
+                "name": "Arndt, Johann"
+            },
+            {
+                "id": "40982",
+                "name": "Boymann, Johann"
+            },
+            {
+                "id": "40985",
+                "name": "Brünnow, Franz"
+            }
+        ]
+    },
+    "29458": {
+        "id": "29458",
+        "name": "Christoph  Gudermann",
+        "school": "Humboldt-Universität zu Berlin",
+        "year": 1823,
+        "dissertation": "",
+        "advisors": [
+            {
+                "id": "57667",
+                "name": "Bernhard Friedrich Thibaut"
+            }
+        ],
+        "students": [
+            {
+                "id": "170206",
+                "name": "Féaux, Bernhard Joseph"
+            },
+            {
+                "id": "7486",
+                "name": "Weierstraß, Karl"
+            }
+        ]
+    },
+    "25484": {
+        "id": "25484",
+        "name": "Heinrich Ferdinand Scherk",
+        "school": "Universität Berlin",
+        "year": 1823,
+        "dissertation": "De evolvenda functione ....   disquisitiones nonnullae analyticae",
+        "advisors": [
+            {
+                "id": "18603",
+                "name": "Friedrich Wilhelm Bessel"
+            },
+            {
+                "id": "65162",
+                "name": "Heinrich Wilhelm Brandes"
+            }
+        ],
+        "students": [
+            {
+                "id": "18331",
+                "name": "Kummer, Ernst"
+            },
+            {
+                "id": "34183",
+                "name": "Weyer, Georg Daniel"
+            }
+        ]
+    },
+    "29642": {
+        "id": "29642",
+        "name": "Christian Ludwig Gerling",
+        "school": "Georg-August-Universität Göttingen",
+        "year": 1812,
+        "dissertation": "Methodi projectionis orthographicae usum ad calculos parallacticos facilitandos explicavit simulque eclipsin solarem die VII. Septbr. 1820 [7 September 1820] apparituram",
+        "advisors": [
+            {
+                "id": "18231",
+                "name": "Carl Friedrich Gauß"
+            }
+        ],
+        "students": [
+            {
+                "id": "55316",
+                "name": "Grebe, Ernst"
+            },
+            {
+                "id": "225034",
+                "name": "Melde, Franz"
+            },
+            {
+                "id": "7402",
+                "name": "Plücker, Julius"
+            }
+        ]
+    },
+    "17946": {
+        "id": "17946",
+        "name": "Gustav Peter Lejeune Dirichlet",
+        "school": "Rheinische Friedrich-Wilhelms-Universität Bonn",
+        "year": 1827,
+        "dissertation": "Partial Results on Fermat's Last Theorem, Exponent 5",
+        "advisors": [
+            {
+                "id": "17865",
+                "name": "Siméon Denis Poisson"
+            },
+            {
+                "id": "17981",
+                "name": "Jean-Baptiste Joseph Fourier"
+            }
+        ],
+        "students": [
+            {
+                "id": "61850",
+                "name": "Bauer, Gustav"
+            },
+            {
+                "id": "66101",
+                "name": "Bjerknes, Carl"
+            },
+            {
+                "id": "59343",
+                "name": "Enneper, Alfred"
+            }
+        ]
+    },
+    "47064": {
+        "id": "47064",
+        "name": "Martin  Ohm",
+        "school": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+        "year": 1811,
+        "dissertation": "De elevatione serierum infinitarum secundi ordinis ad potestatem exponentis indeterminati",
+        "advisors": [
+            {
+                "id": "47025",
+                "name": "Karl Christian von Langsdorf"
+            }
+        ],
+        "students": [
+            {
+                "id": "58045",
+                "name": "August, Friedrich"
+            },
+            {
+                "id": "58046",
+                "name": "Bachmann, Friedrich"
+            },
+            {
+                "id": "18598",
+                "name": "Bachmann, Paul"
+            }
+        ]
+    },
+    "124490": {
+        "id": "124490",
+        "name": "Johann Carl Gehler",
+        "school": "Universität Leipzig",
+        "year": 1758,
+        "dissertation": "Horrorem ut signum",
+        "advisors": [
+            {
+                "id": "124845",
+                "name": "Christian Gottlieb Ludwig"
+            }
+        ],
+        "students": [
+            {
+                "id": "124285",
+                "name": "Werner, Abraham"
+            }
+        ]
+    },
+    "57659": {
+        "id": "57659",
+        "name": "Johann Tobias Mayer",
+        "school": "Georg-August-Universität Göttingen",
+        "year": 1773,
+        "dissertation": "Tetragonometriae specimen",
+        "advisors": [
+            {
+                "id": "66476",
+                "name": "Abraham Gotthelf Kästner"
+            },
+            {
+                "id": "65161",
+                "name": "Georg Christoph Lichtenberg"
+            }
+        ],
+        "students": [
+            {
+                "id": "41423",
+                "name": "Dirksen, Enno"
+            },
+            {
+                "id": "225908",
+                "name": "Gräffe, Carl"
+            },
+            {
+                "id": "225895",
+                "name": "Müller, Fooke"
+            }
+        ]
+    },
+    "57667": {
+        "id": "57667",
+        "name": "Bernhard Friedrich Thibaut",
+        "school": "Georg-August-Universität Göttingen",
+        "year": 1796,
+        "dissertation": "Dissertatio historiam controversiae circa numerorum negativorum et impossibilium logarithmos sistens",
+        "advisors": [
+            {
+                "id": "66476",
+                "name": "Abraham Gotthelf Kästner"
+            },
+            {
+                "id": "65161",
+                "name": "Georg Christoph Lichtenberg"
+            }
+        ],
+        "students": [
+            {
+                "id": "41423",
+                "name": "Dirksen, Enno"
+            },
+            {
+                "id": "225908",
+                "name": "Gräffe, Carl"
+            },
+            {
+                "id": "29458",
+                "name": "Gudermann, Christoph"
+            }
+        ]
+    },
+    "18603": {
+        "id": "18603",
+        "name": "Friedrich Wilhelm Bessel",
+        "school": "Georg-August-Universität Göttingen",
+        "year": 1810,
+        "dissertation": "",
+        "advisors": [
+            {
+                "id": "18231",
+                "name": "Carl Friedrich Gauß"
+            }
+        ],
+        "students": [
+            {
+                "id": "166282",
+                "name": "Argelander, Friedrich"
+            },
+            {
+                "id": "166469",
+                "name": "Luther, Eduard"
+            },
+            {
+                "id": "25484",
+                "name": "Scherk, Heinrich"
+            }
+        ]
+    },
+    "65162": {
+        "id": "65162",
+        "name": "Heinrich Wilhelm Brandes",
+        "school": "Georg-August-Universität Göttingen",
+        "year": 1800,
+        "dissertation": "Versuche, die Entfernung, die Geschwindigkeit und die Bahnen der Sternschnuppen zu bestimmen",
+        "advisors": [
+            {
+                "id": "66476",
+                "name": "Abraham Gotthelf Kästner"
+            },
+            {
+                "id": "65161",
+                "name": "Georg Christoph Lichtenberg"
+            }
+        ],
+        "students": [
+            {
+                "id": "25484",
+                "name": "Scherk, Heinrich"
+            }
+        ]
+    },
+    "18231": {
+        "id": "18231",
+        "name": "Carl Friedrich Gauß",
+        "school": "Universität Helmstedt",
+        "year": 1799,
+        "dissertation": "Demonstratio nova theorematis omnem functionem algebraicam rationalem integram unius variabilis in factores reales primi vel secundi gradus resolvi posse",
+        "advisors": [
+            {
+                "id": "18230",
+                "name": "Johann Friedrich Pfaff"
+            }
+        ],
+        "students": [
+            {
+                "id": "18603",
+                "name": "Bessel, Friedrich"
+            },
+            {
+                "id": "18233",
+                "name": "Dedekind, J. W. Richard"
+            },
+            {
+                "id": "62547",
+                "name": "Encke, Johann"
+            }
+        ]
+    },
+    "17865": {
+        "id": "17865",
+        "name": "Siméon Denis Poisson",
+        "school": "École Polytechnique",
+        "year": 1800,
+        "dissertation": "",
+        "advisors": [
+            {
+                "id": "17864",
+                "name": "Joseph Louis Lagrange"
+            },
+            {
+                "id": "108295",
+                "name": "Pierre-Simon  Laplace"
+            }
+        ],
+        "students": [
+            {
+                "id": "26995",
+                "name": "Chasles, Michel"
+            },
+            {
+                "id": "17946",
+                "name": "Dirichlet, Gustav"
+            },
+            {
+                "id": "55185",
+                "name": "Liouville, Joseph"
+            }
+        ]
+    },
+    "17981": {
+        "id": "17981",
+        "name": "Jean-Baptiste Joseph Fourier",
+        "school": "École Normale Supérieure",
+        "year": null,
+        "dissertation": "",
+        "advisors": [
+            {
+                "id": "17864",
+                "name": "Joseph Louis Lagrange"
+            }
+        ],
+        "students": [
+            {
+                "id": "17946",
+                "name": "Dirichlet, Gustav"
+            },
+            {
+                "id": "43262",
+                "name": "Plana, Giovanni"
+            }
+        ]
+    },
+    "47025": {
+        "id": "47025",
+        "name": "Karl Christian von Langsdorf",
+        "school": "Georg-August-Universität Göttingen and Justus-Liebig-Universität Gießen and Universität Erfurt",
+        "year": 1781,
+        "dissertation": "",
+        "advisors": [
+            {
+                "id": "66476",
+                "name": "Abraham Gotthelf Kästner"
+            }
+        ],
+        "students": [
+            {
+                "id": "47064",
+                "name": "Ohm, Martin"
+            },
+            {
+                "id": "101893",
+                "name": "Schweigger, Johann"
+            },
+            {
+                "id": "90694",
+                "name": "Schweins, Ferdinand"
+            }
+        ]
+    },
+    "124845": {
+        "id": "124845",
+        "name": "Christian Gottlieb Ludwig",
+        "school": "Universität Leipzig",
+        "year": 1737,
+        "dissertation": "De sexu plantarum, gratiosi medicorum ordinis consensu ; Dissertationem inauguralem de deglutitione naturali et praepostera",
+        "advisors": [
+            {
+                "id": "125001",
+                "name": "Christoph Friedrich Haase"
+            },
+            {
+                "id": "125002",
+                "name": "Augustin Friedrich Walther"
+            }
+        ],
+        "students": [
+            {
+                "id": "124490",
+                "name": "Gehler, Johann"
+            }
+        ]
+    },
+    "66476": {
+        "id": "66476",
+        "name": "Abraham Gotthelf Kästner",
+        "school": "Universität Leipzig",
+        "year": 1739,
+        "dissertation": "Theoria radicum in aequationibus",
+        "advisors": [
+            {
+                "id": "57670",
+                "name": "Christian August Hausen"
+            }
+        ],
+        "students": [
+            {
+                "id": "151180",
+                "name": "Bartels, Johann"
+            },
+            {
+                "id": "101403",
+                "name": "Bolyai, Farkas"
+            },
+            {
+                "id": "65162",
+                "name": "Brandes, Heinrich"
+            }
+        ]
+    },
+    "65161": {
+        "id": "65161",
+        "name": "Georg Christoph Lichtenberg",
+        "school": "Georg-August-Universität Göttingen",
+        "year": 1765,
+        "dissertation": "",
+        "advisors": [
+            {
+                "id": "66476",
+                "name": "Abraham Gotthelf Kästner"
+            }
+        ],
+        "students": [
+            {
+                "id": "151180",
+                "name": "Bartels, Johann"
+            },
+            {
+                "id": "65162",
+                "name": "Brandes, Heinrich"
+            },
+            {
+                "id": "57659",
+                "name": "Mayer, Johann"
+            }
+        ]
+    },
+    "18230": {
+        "id": "18230",
+        "name": "Johann Friedrich Pfaff",
+        "school": "Georg-August-Universität Göttingen",
+        "year": 1786,
+        "dissertation": "Commentatio de ortibus et occasibus siderum apud auctores classicos commemoratis",
+        "advisors": [
+            {
+                "id": "66476",
+                "name": "Abraham Gotthelf Kästner"
+            },
+            {
+                "id": "127710",
+                "name": "Johann Elert Bode"
+            }
+        ],
+        "students": [
+            {
+                "id": "151180",
+                "name": "Bartels, Johann"
+            },
+            {
+                "id": "18231",
+                "name": "Gauß, Carl"
+            },
+            {
+                "id": "51876",
+                "name": "Grunert, Johann"
+            }
+        ]
+    },
+    "17864": {
+        "id": "17864",
+        "name": "Joseph Louis Lagrange",
+        "school": "",
+        "year": null,
+        "dissertation": "Epistolary Correspondence on Variational Calculus",
+        "advisors": [
+            {
+                "id": "38586",
+                "name": "Leonhard  Euler"
+            }
+        ],
+        "students": [
+            {
+                "id": "17981",
+                "name": "Fourier, Jean-Baptiste"
+            },
+            {
+                "id": "43262",
+                "name": "Plana, Giovanni"
+            },
+            {
+                "id": "17865",
+                "name": "Poisson, Siméon"
+            }
+        ]
+    },
+    "108295": {
+        "id": "108295",
+        "name": "Pierre-Simon  Laplace",
+        "school": "Université de Caen Normandie",
+        "year": 1769,
+        "dissertation": "Recherches sur le calcul integral aux differences infiniment petites et aux differences finies",
+        "advisors": [
+            {
+                "id": "108266",
+                "name": "Jean Le Rond d'Alembert"
+            }
+        ],
+        "students": [
+            {
+                "id": "294953",
+                "name": "Biot, Jean-Baptiste"
+            },
+            {
+                "id": "17865",
+                "name": "Poisson, Siméon"
+            }
+        ]
+    },
+    "125001": {
+        "id": "125001",
+        "name": "Christoph Friedrich Haase",
+        "school": "",
+        "year": null,
+        "dissertation": "",
+        "advisors": [],
+        "students": [
+            {
+                "id": "124845",
+                "name": "Ludwig, Christian"
+            }
+        ]
+    },
+    "125002": {
+        "id": "125002",
+        "name": "Augustin Friedrich Walther",
+        "school": "Martin-Luther-Universität Halle-Wittenberg",
+        "year": 1712,
+        "dissertation": "Dissertationem inauguralem De secretione animali",
+        "advisors": [
+            {
+                "id": "125107",
+                "name": "Johann Gottfried von Berger"
+            }
+        ],
+        "students": [
+            {
+                "id": "124845",
+                "name": "Ludwig, Christian"
+            },
+            {
+                "id": "201934",
+                "name": "Pohl, Johann Christoph"
+            }
+        ]
+    },
+    "57670": {
+        "id": "57670",
+        "name": "Christian August Hausen",
+        "school": "Martin-Luther-Universität Halle-Wittenberg",
+        "year": 1713,
+        "dissertation": "De corpore scissuris figurisque non cruetando ductu",
+        "advisors": [
+            {
+                "id": "72669",
+                "name": "Johann Christoph Wichmannshausen"
+            },
+            {
+                "id": "128986",
+                "name": "Johann Andreas Planer"
+            }
+        ],
+        "students": [
+            {
+                "id": "60213",
+                "name": "Bürckmann, Christoph"
+            },
+            {
+                "id": "103387",
+                "name": "Heinsius, Gottfried"
+            },
+            {
+                "id": "66476",
+                "name": "Kästner, Abraham"
+            }
+        ]
+    },
+    "127710": {
+        "id": "127710",
+        "name": "Johann Elert Bode",
+        "school": "Handelsakademie Hamburg",
+        "year": null,
+        "dissertation": "",
+        "advisors": [
+            {
+                "id": "127668",
+                "name": "Johann Georg Büsch"
+            }
+        ],
+        "students": [
+            {
+                "id": "18230",
+                "name": "Pfaff, Johann"
+            },
+            {
+                "id": "206303",
+                "name": "von Soldner, Johann"
+            }
+        ]
+    },
+    "38586": {
+        "id": "38586",
+        "name": "Leonhard  Euler",
+        "school": "Universität Basel",
+        "year": 1726,
+        "dissertation": "Dissertatio physica de sono",
+        "advisors": [
+            {
+                "id": "53410",
+                "name": "Johann  Bernoulli"
+            }
+        ],
+        "students": [
+            {
+                "id": "122738",
+                "name": "Euler, Johann"
+            },
+            {
+                "id": "122708",
+                "name": "Fuss, Nicolaus"
+            },
+            {
+                "id": "112812",
+                "name": "Hennert, Johann"
+            }
+        ]
+    },
+    "108266": {
+        "id": "108266",
+        "name": "Jean Le Rond d'Alembert",
+        "school": "Collège Mazarin",
+        "year": 1735,
+        "dissertation": "",
+        "advisors": [
+            {
+                "id": "294942",
+                "name": "Léonor  Caron"
+            }
+        ],
+        "students": [
+            {
+                "id": "108295",
+                "name": "Laplace, Pierre-Simon"
+            }
+        ]
+    },
+    "125107": {
+        "id": "125107",
+        "name": "Johann Gottfried von Berger",
+        "school": "Friedrich-Schiller-Universität Jena",
+        "year": 1682,
+        "dissertation": "Dissertatio inauguralis de circulatione lymphae, et catarrhis",
+        "advisors": [
+            {
+                "id": "125143",
+                "name": "Augustin Heinrich Fasch"
+            }
+        ],
+        "students": [
+            {
+                "id": "125002",
+                "name": "Walther, Augustin"
+            }
+        ]
+    },
+    "72669": {
+        "id": "72669",
+        "name": "Johann Christoph Wichmannshausen",
+        "school": "Universität Leipzig",
+        "year": 1685,
+        "dissertation": "Disputationem Moralem De Divortiis Secundum Jus Naturae",
+        "advisors": [
+            {
+                "id": "21235",
+                "name": "Otto  Mencke"
+            }
+        ],
+        "students": [
+            {
+                "id": "57670",
+                "name": "Hausen, Christian"
+            }
+        ]
+    },
+    "128986": {
+        "id": "128986",
+        "name": "Johann Andreas Planer",
+        "school": "Martin-Luther-Universität Halle-Wittenberg",
+        "year": 1686,
+        "dissertation": "Gynaeceum Doctum, sive Dissertatio Historico-literaria",
+        "advisors": [
+            {
+                "id": "128046",
+                "name": "Johann  Pasch"
+            }
+        ],
+        "students": [
+            {
+                "id": "57670",
+                "name": "Hausen, Christian"
+            },
+            {
+                "id": "129079",
+                "name": "Weidlerus, Johannes"
+            }
+        ]
+    },
+    "127668": {
+        "id": "127668",
+        "name": "Johann Georg Büsch",
+        "school": "Georg-August-Universität Göttingen",
+        "year": 1752,
+        "dissertation": "",
+        "advisors": [
+            {
+                "id": "60782",
+                "name": "Johann Andreas Segner"
+            }
+        ],
+        "students": [
+            {
+                "id": "127710",
+                "name": "Bode, Johann"
+            }
+        ]
+    },
+    "53410": {
+        "id": "53410",
+        "name": "Johann  Bernoulli",
+        "school": "Universität Basel",
+        "year": 1690,
+        "dissertation": "Dissertatio de effervescentia et fermentatione; Dissertatio Inauguralis Physico-Anatomica de Motu Musculorum",
+        "advisors": [
+            {
+                "id": "54440",
+                "name": "Jacob  Bernoulli"
+            },
+            {
+                "id": "129628",
+                "name": "Nikolaus  Eglinger"
+            }
+        ],
+        "students": [
+            {
+                "id": "108998",
+                "name": "Bernoulli, Daniel"
+            },
+            {
+                "id": "38586",
+                "name": "Euler, Leonhard"
+            },
+            {
+                "id": "113403",
+                "name": "Hoorn, Henricus"
+            }
+        ]
+    },
+    "294942": {
+        "id": "294942",
+        "name": "Léonor  Caron",
+        "school": "Collège Mazarin",
+        "year": 1710,
+        "dissertation": "",
+        "advisors": [
+            {
+                "id": "112689",
+                "name": "Pierre  Varignon"
+            }
+        ],
+        "students": [
+            {
+                "id": "108266",
+                "name": "d'Alembert, Jean"
+            }
+        ]
+    },
+    "125143": {
+        "id": "125143",
+        "name": "Augustin Heinrich Fasch",
+        "school": "Friedrich-Schiller-Universität Jena",
+        "year": 1663,
+        "dissertation": "Thea misoptochos vulgo medicorum opprobrium podagra",
+        "advisors": [
+            {
+                "id": "125154",
+                "name": "Werner  Rolfinck"
+            }
+        ],
+        "students": [
+            {
+                "id": "125698",
+                "name": "Hoffmann, Friedrich"
+            },
+            {
+                "id": "125107",
+                "name": "von Berger, Johann"
+            }
+        ]
+    },
+    "21235": {
+        "id": "21235",
+        "name": "Otto  Mencke",
+        "school": "Universität Leipzig",
+        "year": 1665,
+        "dissertation": "Ex Theologia naturali -- De Absoluta Dei Simplicitate, Micropolitiam, id est Rempublicam In Microcosmo Conspicuam",
+        "advisors": [
+            {
+                "id": "137705",
+                "name": "Jakob  Thomasius"
+            }
+        ],
+        "students": [
+            {
+                "id": "77909",
+                "name": "Michelmann, Christian"
+            },
+            {
+                "id": "72669",
+                "name": "Wichmannshausen, Johann"
+            }
+        ]
+    },
+    "128046": {
+        "id": "128046",
+        "name": "Johann  Pasch",
+        "school": "Martin-Luther-Universität Halle-Wittenberg",
+        "year": 1683,
+        "dissertation": "Conjunctiones in genere dissertatione astronomico-theorica",
+        "advisors": [
+            {
+                "id": "127962",
+                "name": "Michael d. J.  Walther"
+            }
+        ],
+        "students": [
+            {
+                "id": "128986",
+                "name": "Planer, Johann"
+            }
+        ]
+    },
+    "60782": {
+        "id": "60782",
+        "name": "Johann Andreas Segner",
+        "school": "Friedrich-Schiller-Universität Jena",
+        "year": 1725,
+        "dissertation": "Dissertatio epistolica qua regulam Harrioti de modo ex aequationum signis numerum radicum tam verarum quam spuriarum eas componentium, cognoscendi, demonstrare, simulque rationem structurae instrumenti novi, sectionibus conicis secundi generis plerisque, ac omnibus primi, describendis apti",
+        "advisors": [
+            {
+                "id": "125886",
+                "name": "Georg Erhard Hamberger"
+            }
+        ],
+        "students": [
+            {
+                "id": "127668",
+                "name": "Büsch, Johann"
+            },
+            {
+                "id": "60816",
+                "name": "Garve, Christian"
+            },
+            {
+                "id": "60815",
+                "name": "Niemeyer, August"
+            }
+        ]
+    },
+    "54440": {
+        "id": "54440",
+        "name": "Jacob  Bernoulli",
+        "school": "Universität Basel",
+        "year": 1676,
+        "dissertation": "Primi et Secundi Adami Collatio",
+        "advisors": [
+            {
+                "id": "143084",
+                "name": "Peter  Werenfels"
+            }
+        ],
+        "students": [
+            {
+                "id": "53410",
+                "name": "Bernoulli, Johann"
+            },
+            {
+                "id": "103742",
+                "name": "Bernoulli, Nikolaus (I)"
+            },
+            {
+                "id": "96720",
+                "name": "Hermann, Jacob"
+            }
+        ]
+    },
+    "129628": {
+        "id": "129628",
+        "name": "Nikolaus  Eglinger",
+        "school": "Universität Basel",
+        "year": 1660,
+        "dissertation": "Disputatio medica in universam physiologiam; Disputatio Medica Inauguralis De Angina",
+        "advisors": [
+            {
+                "id": "125125",
+                "name": "Emmanuel  Stupanus"
+            },
+            {
+                "id": "129708",
+                "name": "Johann Caspar Bauhin"
+            }
+        ],
+        "students": [
+            {
+                "id": "53410",
+                "name": "Bernoulli, Johann"
             }
         ]
     }

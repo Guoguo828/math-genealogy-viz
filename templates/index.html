@@ -15,30 +15,57 @@
             <input type="text" id="search-input" placeholder="Search for a mathematician...">
             <button id="search-btn">Search</button>
         </div>
+        <!-- 优化1: 控制栏 -->
+        <div id="controls-container">
+            <button id="fit-btn" class="control-btn" title="Fit to Screen">🔍 Fit View</button>
+            <button id="export-btn" class="control-btn" title="Save as Image">📷 Export PNG</button>
+            <button id="layout-btn" class="control-btn" title="Toggle Layout Direction">🔄 Rotate Layout</button>
+            <button id="reset-highlight-btn" class="control-btn" style="display:none;">❌ Clear Highlight</button>
+        </div>
     </header>
     <main>
+        <!-- 优化2: 统计面板 -->
+        <section id="stats-panel">
+            <div class="stat-item">
+                <span class="stat-label">Total Scholars</span>
+                <span class="stat-value" id="stat-total">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Earliest Year</span>
+                <span class="stat-value" id="stat-year">N/A</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Top School</span>
+                <span class="stat-value" id="stat-school">N/A</span>
+            </div>
+        </section>
+
         <section id="genealogy-tree">
             <!-- 2. 确保容器 ID 是 mynetwork (与 CSS 对应) -->
             <div id="mynetwork"></div>
             <div id="legend">
                 <div class="legend-item">
-                    <span class="color-box" style="background-color: #FFB7B2; border-color: #FF6F61;"></span>
-                    <span>&lt; 1800</span>
+                    <span class="color-box" style="background-color: #ff9a9e; border-color: #ff758c;"></span>
+                    <span>&lt; 1700</span>
                 </div>
                 <div class="legend-item">
-                    <span class="color-box" style="background-color: #FFDAC1; border-color: #FF9F80;"></span>
+                    <span class="color-box" style="background-color: #fad0c4; border-color: #f6a69f;"></span>
+                    <span>1700 - 1799</span>
+                </div>
+                <div class="legend-item">
+                    <span class="color-box" style="background-color: #fbc2eb; border-color: #d896cc;"></span>
                     <span>1800 - 1899</span>
                 </div>
                 <div class="legend-item">
-                    <span class="color-box" style="background-color: #E2F0CB; border-color: #88B04B;"></span>
+                    <span class="color-box" style="background-color: #a18cd1; border-color: #8571b3;"></span>
                     <span>1900 - 1949</span>
                 </div>
                 <div class="legend-item">
-                    <span class="color-box" style="background-color: #B5EAD7; border-color: #009B77;"></span>
+                    <span class="color-box" style="background-color: #84fab0; border-color: #6bd692;"></span>
                     <span>1950 - 1999</span>
                 </div>
                 <div class="legend-item">
-                    <span class="color-box" style="background-color: #C7CEEA; border-color: #6B5B95;"></span>
+                    <span class="color-box" style="background-color: #8fd3f4; border-color: #6bb5d6;"></span>
                     <span>&ge; 2000</span>
                 </div>
                 <div class="legend-item">
