@@ -158,6 +158,18 @@ document.addEventListener('DOMContentLoaded', function() {
             const network = new vis.Network(container, data, options);
 
             // 优化1: 控制栏功能
+            document.getElementById('reset-view-btn').addEventListener('click', () => {
+                resetHighlight();
+                currentDirection = "DU";
+                options.layout.hierarchical.direction = currentDirection;
+                network.setOptions(options);
+                network.fit({ animation: true });
+                searchInput.value = '';
+                document.getElementById('details-container').style.display = 'none';
+                document.getElementById('details-placeholder').style.display = 'block';
+                document.getElementById('node-popup').style.display = 'none';
+            });
+
             document.getElementById('fit-btn').addEventListener('click', () => {
                 network.fit({ animation: true });
             });
@@ -193,8 +205,22 @@ document.addEventListener('DOMContentLoaded', function() {
             let highlightActive = false;
 
             function highlightLineage(selectedNodeId) {
-                const allNodes = data.nodes.get();
+                let allNodes = data.nodes.get();
                 const allEdges = data.edges.get();
+                
+                // Ensure originalColor is saved for all nodes
+                const updatesForOriginalColor = [];
+                allNodes = allNodes.map(node => {
+                    if (!node.originalColor) {
+                        node.originalColor = node.color;
+                        updatesForOriginalColor.push({id: node.id, originalColor: node.color});
+                    }
+                    return node;
+                });
+                
+                if (updatesForOriginalColor.length > 0) {
+                    data.nodes.update(updatesForOriginalColor);
+                }
                 
                 // 找出所有相关的节点（祖先和后代）
                 // 这里简化处理：只高亮直接连接的节点，或者遍历整个图
@@ -241,16 +267,12 @@ document.addEventListener('DOMContentLoaded', function() {
                         updateArray.push({
                             id: node.id, 
                             color: { 
-                                background: node.originalColor ? node.originalColor.background : undefined,
-                                border: node.originalColor ? node.originalColor.border : undefined
+                                background: node.originalColor.background,
+                                border: node.originalColor.border
                             },
                             opacity: 1
                         });
                     } else {
-                        // 保存原始颜色以便恢复
-                        if (!node.originalColor) {
-                            node.originalColor = node.color;
-                        }
                         updateArray.push({
                             id: node.id, 
                             color: { background: '#eeeeee', border: '#dddddd' },
