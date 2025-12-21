@@ -285,6 +285,11 @@ document.addEventListener('DOMContentLoaded', function() {
             function updateDetails(nodeId) {
                 const person = rawData[nodeId];
                 const detailsContainer = document.getElementById('details-container');
+                const placeholder = document.getElementById('details-placeholder');
+                
+                // 显示内容区域，隐藏占位符
+                placeholder.style.display = 'none';
+                detailsContainer.style.display = 'block';
                 
                 let content = '';
                 if (person) {
@@ -355,15 +360,56 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // 5. 事件监听：点击节点显示详情并聚焦
             network.on("click", function (params) {
+                const popup = document.getElementById('node-popup');
+                
                 if (params.nodes.length > 0) {
                     const nodeId = params.nodes[0];
                     updateDetails(nodeId);
                     focusNode(nodeId);
                     highlightLineage(nodeId); // 触发高亮
+
+                    // 优化: 显示悬浮框
+                    const person = rawData[nodeId];
+                    if (person) {
+                        popup.innerHTML = `
+                            <h3>${person.name}</h3>
+                            <p>🏫 ${person.school || 'Unknown School'}</p>
+                            <p>📅 ${person.year || 'Unknown Year'}</p>
+                        `;
+                        
+                        // 获取节点在 DOM 中的位置
+                        const domCoords = network.canvasToDOM(network.getPositions([nodeId])[nodeId]);
+                        
+                        // 设置位置 (稍微偏移一点，避免遮挡节点)
+                        popup.style.left = (domCoords.x + 20) + 'px';
+                        popup.style.top = (domCoords.y - 20) + 'px';
+                        popup.style.display = 'block';
+                    } else {
+                        // 对于没有详细数据的节点，显示基本信息
+                        const nodeData = data.nodes.get(nodeId);
+                        popup.innerHTML = `
+                            <h3>${nodeData.label}</h3>
+                            <p>ID: ${nodeId}</p>
+                        `;
+                        const domCoords = network.canvasToDOM(network.getPositions([nodeId])[nodeId]);
+                        popup.style.left = (domCoords.x + 20) + 'px';
+                        popup.style.top = (domCoords.y - 20) + 'px';
+                        popup.style.display = 'block';
+                    }
+
                 } else {
                     // 点击空白处重置
                     resetHighlight();
+                    popup.style.display = 'none';
                 }
+            });
+
+            // 拖拽或缩放时隐藏悬浮框
+            network.on("dragStart", function() {
+                document.getElementById('node-popup').style.display = 'none';
+            });
+            network.on("zoom", function() {
+                document.getElementById('node-popup').style.display = 'none';
             });
 
             // 6. 搜索功能实现

@@ -3,85 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mathematics Genealogy Visualization</title>
-    <!-- 1. 新增：引入 Vis.js 库 -->
+    <title>溯源谱系图</title>
     <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Mathematics Genealogy Visualization</h1>
-        <div id="search-container">
-            <input type="text" id="search-input" placeholder="Search for a mathematician...">
-            <button id="search-btn">Search</button>
-        </div>
-        <!-- 优化1: 控制栏 -->
-        <div id="controls-container">
-            <button id="fit-btn" class="control-btn" title="Fit to Screen">🔍 Fit View</button>
-            <button id="export-btn" class="control-btn" title="Save as Image">📷 Export PNG</button>
-            <button id="layout-btn" class="control-btn" title="Toggle Layout Direction">🔄 Rotate Layout</button>
-            <button id="reset-highlight-btn" class="control-btn" style="display:none;">❌ Clear Highlight</button>
-        </div>
-    </header>
-    <main>
-        <!-- 优化2: 统计面板 -->
-        <section id="stats-panel">
-            <div class="stat-item">
-                <span class="stat-label">Total Scholars</span>
-                <span class="stat-value" id="stat-total">0</span>
+    <div class="app-container">
+        <!-- Top Navigation Bar -->
+        <nav class="top-nav">
+            <div class="brand">
+                <span class="logo-icon">🧬</span>
+                <h1>溯源谱系图</h1>
             </div>
-            <div class="stat-item">
-                <span class="stat-label">Earliest Year</span>
-                <span class="stat-value" id="stat-year">N/A</span>
+            
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search mathematician...">
+                <button id="search-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </button>
             </div>
-            <div class="stat-item">
-                <span class="stat-label">Top School</span>
-                <span class="stat-value" id="stat-school">N/A</span>
-            </div>
-        </section>
 
-        <section id="genealogy-tree">
-            <!-- 2. 确保容器 ID 是 mynetwork (与 CSS 对应) -->
-            <div id="mynetwork"></div>
-            <div id="legend">
-                <div class="legend-item">
-                    <span class="color-box" style="background-color: #ff9a9e; border-color: #ff758c;"></span>
-                    <span>&lt; 1700</span>
-                </div>
-                <div class="legend-item">
-                    <span class="color-box" style="background-color: #fad0c4; border-color: #f6a69f;"></span>
-                    <span>1700 - 1799</span>
-                </div>
-                <div class="legend-item">
-                    <span class="color-box" style="background-color: #fbc2eb; border-color: #d896cc;"></span>
-                    <span>1800 - 1899</span>
-                </div>
-                <div class="legend-item">
-                    <span class="color-box" style="background-color: #a18cd1; border-color: #8571b3;"></span>
-                    <span>1900 - 1949</span>
-                </div>
-                <div class="legend-item">
-                    <span class="color-box" style="background-color: #84fab0; border-color: #6bd692;"></span>
-                    <span>1950 - 1999</span>
-                </div>
-                <div class="legend-item">
-                    <span class="color-box" style="background-color: #8fd3f4; border-color: #6bb5d6;"></span>
-                    <span>&ge; 2000</span>
-                </div>
-                <div class="legend-item">
-                    <span class="color-box" style="background-color: #e0e0e0; border-color: #bdbdbd;"></span>
-                    <span>Unknown</span>
-                </div>
+            <div class="nav-controls">
+                <button id="fit-btn" class="icon-btn" title="Fit View">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </button>
+                <button id="layout-btn" class="icon-btn" title="Rotate Layout">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                </button>
+                <button id="export-btn" class="icon-btn" title="Export PNG">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                </button>
+                <button id="reset-highlight-btn" class="icon-btn danger" style="display:none;" title="Clear Highlight">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
             </div>
-        </section>
-        <section id="person-details">
-            <h2>Person Details</h2>
-            <div id="details-container">
-                <!-- Details of the selected person will be displayed here -->
-            </div>
-        </section>
-    </main>
-    <!-- 3. 脚本放在 body 结束前 -->
+        </nav>
+
+        <div class="main-layout">
+            <!-- Left Sidebar: Stats & Details -->
+            <aside class="sidebar">
+                <!-- Stats Card -->
+                <div class="card stats-card">
+                    <div class="card-header">
+                        <h3>Overview</h3>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-label">Scholars</span>
+                            <span class="stat-value" id="stat-total">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Earliest</span>
+                            <span class="stat-value" id="stat-year">-</span>
+                        </div>
+                    </div>
+                    <div class="stat-item full-width">
+                        <span class="stat-label">Top School</span>
+                        <span class="stat-value small" id="stat-school">-</span>
+                    </div>
+                </div>
+
+                <!-- Details Card -->
+                <div class="card details-card">
+                    <div class="card-header">
+                        <h3>Details</h3>
+                    </div>
+                    <div id="details-content-wrapper">
+                        <div id="details-placeholder" class="empty-state">
+                            <div class="empty-icon">👆</div>
+                            <p>Select a node to view details</p>
+                        </div>
+                        <div id="details-container" style="display:none;">
+                            <!-- Content injected by JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Legend Card -->
+                <div class="card legend-card">
+                    <div class="card-header">
+                        <h3>Legend</h3>
+                    </div>
+                    <div class="legend-grid">
+                        <div class="legend-item"><span class="dot" style="background:#ff9a9e; border-color:#ff758c;"></span> &lt; 1700</div>
+                        <div class="legend-item"><span class="dot" style="background:#fad0c4; border-color:#f6a69f;"></span> 1700s</div>
+                        <div class="legend-item"><span class="dot" style="background:#fbc2eb; border-color:#d896cc;"></span> 1800s</div>
+                        <div class="legend-item"><span class="dot" style="background:#a18cd1; border-color:#8571b3;"></span> 1900-49</div>
+                        <div class="legend-item"><span class="dot" style="background:#84fab0; border-color:#6bd692;"></span> 1950-99</div>
+                        <div class="legend-item"><span class="dot" style="background:#8fd3f4; border-color:#6bb5d6;"></span> &ge; 2000</div>
+                        <div class="legend-item"><span class="dot" style="background:#e0e0e0; border-color:#bdbdbd;"></span> Unknown</div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content: Graph -->
+            <main class="graph-container">
+                <div id="mynetwork"></div>
+                <!-- 优化: 悬浮信息框 -->
+                <div id="node-popup" class="node-popup" style="display: none;"></div>
+            </main>
+        </div>
+    </div>
+
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>
