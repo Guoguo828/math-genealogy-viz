@@ -24,7 +24,16 @@
                 "id": "121341",
                 "name": "Arias, Irene"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Jan Drewes Achenbach.jpg",
+        "affiliation": "Columbia University;Northwestern University",
+        "wiki_intro": "Jan Drewes Achenbach (20 August 1935 – 22 August 2020)[1] was a Dutch-American engineer who was on the faculty of Northwestern University from 1963 until his retirement....",
+        "top_papers": "• 《Mechanik der Polymer Werkstoffe》 (1978), 引用: 3\n• 《Neuer Ansatz bei Morbus Huntington?》 (2025), 引用: 0\n• 《Physiotherapeutische Interventionen beim Morbus Huntington – Daten der realen Welt》 (2024), 引用: 0",
+        "total_citations": 3,
+        "h_index": 1,
+        "source_link": "https://www.semanticscholar.org/author/2060168472",
+        "name_zh": "扬·德鲁斯·阿肯巴赫",
+        "continent": "North America"
     },
     "121205": {
         "id": "121205",
@@ -43,7 +52,16 @@
                 "id": "121329",
                 "name": "Achenbach, Jan"
             }
-        ]
+        ],
+        "image_path": "无图片",
+        "affiliation": "Columbia University",
+        "wiki_intro": "未找到 Wiki",
+        "top_papers": "• 《Systemes et procedes de mise en correspondance de participants a une conversation》 (2001), 引用: 0\n• 《Memoire non volatile comprenant une implantation de bore du cote source》 (2001), 引用: 0\n- Mechanics of solids\n- Harmonic analysis on Euclidean spaces",
+        "total_citations": 6,
+        "h_index": 10,
+        "source_link": "https://www.semanticscholar.org/author/144798913\nhttps://www.wikidata.org/wiki/Q102078051\n",
+        "name_zh": "Chi Chang Chao",
+        "continent": "North America"
     },
     "121102": {
         "id": "121102",
@@ -66,7 +84,16 @@
                 "id": "121205",
                 "name": "Chao, Chi"
             }
-        ]
+        ],
+        "image_path": "无图片",
+        "affiliation": "Polytechnic University",
+        "wiki_intro": "Bruno A. Boley (May 13, 1924 – February 11, 2017)[1] was the Dean of Engineering at Northwestern University for 20 years.[2][3] He also served as an engineering faculty member at Ohio State University, Columbia University and Cornell University. He received the B.S. in Civil Engineering from City Co...",
+        "top_papers": "• 《Theory of thermoelasticity with applications》 (1978), 引用: 455\n• 《Approximate Analyses of Thermally Induced Vibrations of Beams and Plates》 (1972), 引用: 138\n• 《Survey of recent developments in the fields of heat conduction in solids and thermo-elasticity》 (1972), 引用: 48",
+        "total_citations": 4062,
+        "h_index": 20,
+        "source_link": "https://www.semanticscholar.org/author/96751960",
+        "name_zh": "布鲁诺·博利",
+        "continent": "Other"
     },
     "121049": {
         "id": "121049",
@@ -93,7 +120,15 @@
                 "id": "147062",
                 "name": "Eringen, Ahmed Cemal"
             }
-        ]
+        ],
+        "affiliation": "Stanford University",
+        "wiki_intro": "毕业后，尼古拉斯在当时唯一的匈牙利飞机公司——布达佩斯的魏斯·曼弗雷德飞机与发动机制造厂找到了职位。1929年至1939年间，尼古拉斯为匈牙利空军设计训练机和战斗机，特别关注飞机结构设计。1930年代末，他联系了斯蒂芬·P·季莫申科，询问是否可以在他的指导下攻读博士学位。季莫申科接受尼古拉斯为学生，尼古拉斯于1939年抵达斯坦福大学。1942年获得博士学位后，尼古拉斯接受了布鲁克林理工学院的教职。在那里，他对单壳薄壁结构和夹层结构的稳定性进行了理论和实验研究，并得出了至今仍被用于防止屈曲的研究成果。\n\n1957年，教务长弗雷德·特曼邀请尼古拉斯到斯坦福大学创办航空工程系。在他的领导下，该系发展成为航空航天领域的领先中心之一。在斯坦福期间，他继续研究薄壁结构的稳定性，并于1966年出版了广受赞誉的著作《结构分析》。",
+        "top_papers": "《结构分析》",
+        "total_citations": 0,
+        "h_index": 0,
+        "source_link": "https://www.nae.edu/19579/19581/51314/51335/188060/NICHOLAS-JHOFF-19061997\nhttps://shellbuckling.com/cv/hoff.pdf",
+        "name_zh": "尼古拉斯·约翰·霍夫",
+        "continent": "North America"
     },
     "91206": {
         "id": "91206",
@@ -124,7 +159,15 @@
                 "id": "122527",
                 "name": "Bergman, Elmer"
             }
-        ]
+        ],
+        "affiliation": "National Technical University of Ukraine “Kyiv Polytechnic Institute”",
+        "wiki_intro": "https://timoshenko.stanford.edu/",
+        "top_papers": "Applied Elasticity, with J. M. Lessells, 1925\nVibration Problems in Engineering, 1st Ed. 1928\nStrength of Materials, Part I, 1st Ed. 1930\nStrength of Materials, Part II, 1st Ed. 1930\nTheory of Elasticity, with J. N. Goodier, 1st Ed. 1934\nElements of Strength of Materials, with G.H. MacCullough and D.H. Young, 1st Ed. 1935\nTheory of Elastic Stability, with J. M. Gere, 1st Ed. 1936",
+        "total_citations": 0,
+        "h_index": 0,
+        "source_link": "https://timoshenko.stanford.edu/",
+        "name_zh": "斯蒂芬·普罗科菲耶维奇·季莫申科",
+        "continent": "Europe"
     },
     "91182": {
         "id": "91182",
@@ -147,7 +190,15 @@
                 "id": "91206",
                 "name": "Timoshenko, Stephen"
             }
-        ]
+        ],
+        "affiliation": "St. Petersburg State Polytechnic University",
+        "wiki_intro": "https://kpi.ua/en/kyrpychov-foto",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "source_link": "Kirpichev Victor Lvovich | Igor Sikorsky Kyiv Polytechnic Institute\nhttps://sites.ualberta.ca/~gswaters/Math-genealogy/VLKirpichov.pdf",
+        "name_zh": "维克托·利沃维奇·基尔皮霍夫",
+        "continent": "Europe"
     },
     "51374": {
         "id": "51374",
@@ -174,7 +225,16 @@
                 "id": "116268",
                 "name": "Berliner, Sigfrid"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Ludwig  Prandtl.jpg",
+        "affiliation": "University of Göttingen,Technical University of Hannover",
+        "wiki_intro": "Ludwig Prandtl (German pronunciation: [ˈluːtvɪç ˈpʁantl̩]; 4 February 1875 – 15 August 1953)[1] was a German fluid dynamicist, physicist and aerospace scientist. He was a pioneer in the development of rigorous systematic mathematical analyses which he used for underlying the science of aerodynamics,...",
+        "top_papers": "• 《Ein Gedankenmodell zur kinetischen Theorie der festen Körper》 (None), 引用: 698\n• 《Führer durch die Strömungslehre》 (1990), 引用: 348\n• 《Bemerkungen zur Theorie der freien Turbulenz .》 (1942), 引用: 145",
+        "total_citations": 4049,
+        "h_index": 21,
+        "source_link": "https://www.semanticscholar.org/author/93460874",
+        "name_zh": "路德维希·普朗特",
+        "continent": "Europe"
     },
     "46968": {
         "id": "46968",
@@ -205,7 +265,16 @@
                 "id": "91182",
                 "name": "Kirpichov, Viktor"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Gustav Robert Kirchhoff.jpg",
+        "affiliation": "University of Berlin(1847–1850, 1875–1887)University of Breslau(1850–1854)University of Heidelberg(1854–1875)",
+        "wiki_intro": "Gustav Robert Kirchhoff (German: [ˈgʊstaːf ˈʁoːbɛʁt ˈkɪʁçhɔf]; 12 March 1824 – 17 October 1887) was a German physicist and mathematician who contributed to the fundamental understanding of electrical circuits, spectroscopy, and the emission of black-body radiation by heated objects.[3][4] He coined ...",
+        "top_papers": "• 《Ueber die Auflösung der Gleichungen, auf welche man bei der Untersuchung der linearen Vertheilung galvanischer Ströme geführt wird》 (None), 引用: 1286\n• 《Ueber den Einfluss der Wärmeleitung in einem Gase auf die Schallbewegung》 (None), 引用: 406\n• 《Ueber das Verhältniss zwischen dem Emissionsvermögen und dem Absorptionsvermögen der Körper für Wärme und Licht》 (None), 引用: 378",
+        "total_citations": 4284,
+        "h_index": 18,
+        "source_link": "https://www.semanticscholar.org/author/102855945",
+        "name_zh": "古斯塔夫·罗伯特·基尔霍夫",
+        "continent": "Other"
     },
     "71565": {
         "id": "71565",
@@ -236,7 +305,15 @@
                 "id": "122501",
                 "name": "Thoma, Dieter"
             }
-        ]
+        ],
+        "affiliation": "Universität Leipzig",
+        "wiki_intro": "未找到 Wiki",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "source_link": "shellbuckling.com/cv/foppl.pdf\nhttps://link.springer.com/rwe/10.1007/978-3-662-55771-6_290",
+        "name_zh": "奥古斯特·奥托·福普尔",
+        "continent": "Europe"
     },
     "18600": {
         "id": "18600",
@@ -263,7 +340,16 @@
                 "id": "51470",
                 "name": "Meyer, Oskar"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Franz Ernst Neumann.jpg",
+        "affiliation": "Königsberg University",
+        "wiki_intro": "Franz Ernst Neumann (11 September 1798 – 23 May 1895) was a German mineralogist and physicist. He devised the first formulas to calculate inductance. He also formulated Neumann's law for molecular heat. In electromagnetism, he is credited for introducing the magnetic vector potential....",
+        "top_papers": "• 《[Report of the Secretary and Treasurer of the Royal Society]》 (None), 引用: 0",
+        "total_citations": 0,
+        "h_index": 0,
+        "source_link": "https://www.semanticscholar.org/author/2168548844",
+        "name_zh": "弗朗茨·恩斯特·诺依曼",
+        "continent": "Europe"
     },
     "57706": {
         "id": "57706",
@@ -290,7 +376,16 @@
                 "id": "32858",
                 "name": "Neumann, Carl"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Friedrich Julius Richelot.jpg",
+        "affiliation": "University of Königsberg",
+        "wiki_intro": "Friedrich Julius Richelot (6 November 1808 – 31 March 1875) was a German mathematician, born in Königsberg. He was a student of Carl Gustav Jacob Jacobi....",
+        "top_papers": "1832: De resolutione algebraica aequationis x257=1\n, sive de divisione circuli per bisectionem anguli septies repetitam in partes 257\n inter se aequales commentatio coronata (J. Reine Angew. Math. Vol. 9: pp. 146 – 358)",
+        "total_citations": 2,
+        "h_index": 1,
+        "source_link": "https://www.semanticscholar.org/author/2076691643\nhttps://canonica.ai/page/Friedrich_Julius_Richelot\nhttps://proofwiki.org/wiki/Mathematician:Friedrich_Julius_Richelot",
+        "name_zh": "弗里德里希·朱利叶斯·里什洛",
+        "continent": "Other"
     },
     "9712": {
         "id": "9712",
@@ -321,7 +416,16 @@
                 "id": "169374",
                 "name": "Danckwortt, Albert"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Heinrich  Bruns.png",
+        "affiliation": "Pulkowa ObservatoryObservatory of DorpatUniversity of DorpatUniversity of BerlinPrussian Military AcademyGeodetic Institute of PotsdamUniversity of LeipzigLeipzigObservatory",
+        "wiki_intro": "Ernst Heinrich Bruns (4 September 1848 – 23 September 1919) was a German mathematician and astronomer, who also contributed to the development of the field of theoretical geodesy....",
+        "top_papers": "• 《Über die Integrale des Vielkörper-Problems》 (1887), 引用: 77\n• 《Die figur der erde.》 (None), 引用: 65\n• 《Grundlinien des wissenschaftlichen Rechnens》 (None), 引用: 12",
+        "total_citations": 212,
+        "h_index": 7,
+        "source_link": "https://www.semanticscholar.org/author/102283849",
+        "name_zh": "海因里希·布伦斯",
+        "continent": "Europe"
     },
     "7401": {
         "id": "7401",
@@ -352,7 +456,15 @@
                 "id": "217697",
                 "name": "Besser, Rudolf"
             }
-        ]
+        ],
+        "affiliation": "Rheinische Friedrich-Wilhelms-Universität Bonn",
+        "wiki_intro": "未找到 Wiki",
+        "top_papers": "1868: Über die Transformation der allgemeinen Gleichung des zweiten Grades zwischen Linien-Koordinaten auf eine kanonische Form\n1872: Vergleichende Betrachtungen über neuere geometrische Forschungen\n1882: Ueber Riemann's Theorie der Algebraischen Functionen und ihre Integrale\n1884: Vorlesungen über das Ikosaeder und die Auflösung der Gleichungen vom 5ten Grade (English translation by G.G. Morrice: Lectures on the Icosahedron; and the Solution of Equations of the Fifth Degree, 1914)\n1890, 1892: Vorlesungen über die Theorie der elliptischen Modulfunktionen (2 volumes) (with Robert Fricke (2 volumes: 1890 and 1892)\n1893: Evanston Colloquium (before the Congress of Mathematics, reported and published by Alexander Ziwet, 1894)\n1894: Über die hypergeometrische Funktion\n1894: Über lineare Differentialgleichungen der 2. Ordnung\n1895: Vorträge über ausgewählte Fragen der Elementargeometrie) (English translation by W.W. Beman and D.E. Smith: Famous Problems of Elementary Geometry, 1897)\n1897 - 1910: Theorie des Kreisels (with Arnold Sommerfeld)\n1897 - 1912: Vorlesungen über die Theorie der automorphen Funktionen (2 volumes: the second volume was published in three parts) (with Robert Fricke)\n1897: Mathematical Theory of the Top (Princeton address, New York)\n1908: Elementarmathematik vom höheren Standpunkte aus\n1925: Elementarmathematik vom höheren Standpunkte aus, 3rd ed.\n1939: Elementary Mathematics from an Advanced Standpoint: Geometry (translated by Earle Raymond Hedrick and Charles Albert Noble from Elementarmathematik vom höheren Standpunkte aus, 3rd ed.)\nThe Felix Klein Protocols",
+        "total_citations": 0,
+        "h_index": 0,
+        "source_link": "https://www.britannica.com/biography/Felix-Klein\nhttps://proofwiki.org/wiki/Mathematician:Felix_Christian_Klein",
+        "name_zh": "C.菲利克斯（克里斯蒂安）克莱因",
+        "continent": "Europe"
     },
     "66319": {
         "id": "66319",
@@ -379,7 +491,16 @@
                 "id": "233616",
                 "name": "Rose, Gustav"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Christian Samuel Weiss.jpg",
+        "affiliation": "Universität Leipzig",
+        "wiki_intro": "Christian Samuel Weiss (26 February 1780 – 1 October 1856) was a German mineralogist born in Leipzig....",
+        "top_papers": "• 《Radiochemotherapie beim Harnblasenkarzinom》 (2018), 引用: 1\n• 《Bemerkungen über den Zustand der Berliner Universitäts-Wittwenkasse》 (None), 引用: 0",
+        "total_citations": 1,
+        "h_index": 1,
+        "source_link": "https://www.semanticscholar.org/author/145358697",
+        "name_zh": "克里斯蒂安·塞缪尔·韦斯",
+        "continent": "Europe"
     },
     "15635": {
         "id": "15635",
@@ -406,7 +527,16 @@
                 "id": "76359",
                 "name": "Hermes, Oswald"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Carl Gustav Jacob Jacobi.jpg",
+        "affiliation": "University of KönigsbergUniversity of Berlin",
+        "wiki_intro": "Carl Gustav Jacob Jacobi[a] (/dʒəˈkoʊbi/;[3] German: [jaˈkoːbi]; 10 December 1804 – 18 February 1851) was a German mathematician who made fundamental contributions to elliptic functions, dynamics, differential equations, determinants and number theory....",
+        "top_papers": "• 《Über eine elementare Transformation eines in Bezug auf jedes von zwei Variablen-Systemen linearen und homogenen Ausdrucks》 (2013), 引用: 9\n• 《Vierte Vorlesung. Das Princip der Erhaltung der lebendigen Kraft》 (2013), 引用: 5\n• 《C.G.J. Jacobi's gesammelte Werke : herausgegeben auf Veranlassung der königlich preussischen Akademie der Wissenschaften》 (2013), 引用: 3",
+        "total_citations": 1431,
+        "h_index": 17,
+        "source_link": "https://www.semanticscholar.org/author/50649110",
+        "name_zh": "卡尔·古斯塔夫·雅各布·雅各比",
+        "continent": "Europe"
     },
     "7486": {
         "id": "7486",
@@ -433,7 +563,15 @@
                 "id": "40980",
                 "name": "Biermann, Wilhelm"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Karl Theodor Wilhelm Weierstraß.jpg",
+        "affiliation": "Gewerbeinstitut,Friedrich Wilhelm University",
+        "wiki_intro": "Karl Theodor Wilhelm Weierstrass (/ˈvaɪərˌstrɑːs, -ˌʃtrɑːs/;[1] German: Weierstraß [ˈvaɪɐʃtʁaːs];[2] 31 October 1815 – 19 February 1897) was a German mathematician often cited as the \"father of modern analysis\".[3] Despite leaving university without a degree, he studied mathematics and trained as a ...",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "name_zh": "卡尔·西奥多·威廉·维尔斯特拉",
+        "continent": "Europe"
     },
     "18331": {
         "id": "18331",
@@ -460,7 +598,16 @@
                 "id": "18598",
                 "name": "Bachmann, Paul"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Ernst Eduard Kummer.jpg",
+        "affiliation": "University of BerlinUniversity of BreslauGewerbeinstitutLomonosov University",
+        "wiki_intro": "Ernst Eduard Kummer (29 January 1810 – 14 May 1893) was a German mathematician. Skilled in applied mathematics, Kummer trained German army officers in ballistics; afterwards, he taught for 10 years in a gymnasium, the German equivalent of high school, where he inspired the mathematical career of Leo...",
+        "top_papers": "• 《Ueber die Ergänzungssätze zu den allgemeinen Reciprocitätsgesetzen.》 (None), 引用: 120\n• 《Ueber die Transcendenten, welche aus wiederholten Integrationen rationaler Formeln entstehen.》 (None), 引用: 73\n• 《Über eine allgemeine Eigenschaft der rationalen Entwickelungscoefficienten einer bestimmten Gattung analytischer Functionen.》 (None), 引用: 55",
+        "total_citations": 1031,
+        "h_index": 14,
+        "source_link": "https://www.semanticscholar.org/author/20696642",
+        "name_zh": "恩斯特·爱德华·库默",
+        "continent": "Europe"
     },
     "7402": {
         "id": "7402",
@@ -487,7 +634,16 @@
                 "id": "7401",
                 "name": "Klein, C. Felix"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Julius  Plücker.jpg",
+        "affiliation": "University of BonnUniversity of BerlinUniversity of Halle",
+        "wiki_intro": "Julius Plücker (16 July 1801 – 22 May 1868) was a German mathematician and physicist. He made fundamental contributions to the field of analytical geometry and was a pioneer in the investigations of cathode rays that led eventually to the discovery of the electron. He also vastly extended the study ...",
+        "top_papers": "• 《Solution d'une question fondamentale concernant la théorie générale des courbes.》 (None), 引用: 39\n• 《Discussion de la forme générale des ondes lumineuses.》 (None), 引用: 7\n• 《Note au mémoire No. 1.》 (2009), 引用: 1",
+        "total_citations": 50,
+        "h_index": 2,
+        "source_link": "https://www.semanticscholar.org/author/2095445129",
+        "name_zh": "朱利叶斯·普吕克",
+        "continent": "Europe"
     },
     "19964": {
         "id": "19964",
@@ -518,7 +674,15 @@
                 "id": "46992",
                 "name": "Knoblauch, Oscar"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Rudolf Otto Sigismund Lipschitz.jpeg",
+        "affiliation": "University of Bonn",
+        "wiki_intro": "Rudolf Otto Sigismund Lipschitz (14 May 1832 – 7 October 1903) was a German mathematician who made contributions to mathematical analysis (where he gave his name to the Lipschitz continuity condition) and differential geometry, as well as number theory, algebras with involution and classical mechani...",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "name_zh": "鲁道夫·奥托·西吉斯蒙德·利普希茨",
+        "continent": "Europe"
     },
     "124285": {
         "id": "124285",
@@ -541,7 +705,16 @@
                 "id": "66319",
                 "name": "Weiss, Christian"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Abraham Gottlob Werner.jpg",
+        "affiliation": "Freiberg Academy of Mining",
+        "wiki_intro": "Abraham Gottlob Werner (German: [ˈaːbʁaham ˈɡɔtloːp ˈvɛʁnɐ]; 25 September 1749 – 30 June 1817) was a German geologist who set out an early theory about the stratification of the Earth's crust and propounded a history of the Earth that came to be known as Neptunism. While most tenets of Neptunism wer...",
+        "top_papers": "• 《Neue Theorie von der Entstehung der Gänge, mit Anwendung auf den Bergbau, besonders den freibergischen》 (1973), 引用: 19\n• 《Kurze Klassifikation und Beschreibung der verschiedenen Gebürgsarten》 (1973), 引用: 17\n• 《Optimierung der 223Radium-Dichlorid-Therapie von Patienten mit kastrationsresistentem Prostatakarzinom und Knochenmetastasen》 (2021), 引用: 0",
+        "total_citations": 36,
+        "h_index": 2,
+        "source_link": "https://www.semanticscholar.org/author/2060208042",
+        "name_zh": "亚伯拉罕·戈特洛布·维尔纳",
+        "continent": "Europe"
     },
     "124286": {
         "id": "124286",
@@ -555,7 +728,14 @@
                 "id": "66319",
                 "name": "Weiss, Christian"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\René Just Haüy.jpg",
+        "wiki_intro": "René Just Haüy (French pronunciation: [aɥi]) FRS MWS FRSE (28 February 1743 – 1 June 1822) was a French priest and mineralogist, commonly styled the Abbé Haüy after he was made an honorary canon of Notre Dame. Due to his innovative work on crystal structure and his four-volume Traité de Minéralogie ...",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "name_zh": "雷内·贾斯特·豪伊",
+        "continent": "Unknown"
     },
     "41423": {
         "id": "41423",
@@ -586,7 +766,15 @@
                 "id": "40985",
                 "name": "Brünnow, Franz"
             }
-        ]
+        ],
+        "image_path": "无图片",
+        "affiliation": "Georg-August-Universität Göttingen",
+        "wiki_intro": "未找到 Wiki",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "name_zh": "恩诺·海伦·德克森",
+        "continent": "Europe"
     },
     "29458": {
         "id": "29458",
@@ -609,7 +797,16 @@
                 "id": "7486",
                 "name": "Weierstraß, Karl"
             }
-        ]
+        ],
+        "image_path": "无图片",
+        "affiliation": "Münster Academy",
+        "wiki_intro": "Christoph Gudermann (25 March 1798 – 25 September 1852) was a German mathematician noted for introducing the Gudermannian function and the concept of uniform convergence, and for being the teacher of Karl Weierstrass, who was greatly influenced by Gudermann's course on elliptic functions in 1839–184...",
+        "top_papers": "• 《Effects of thermal shocks on the release of radioisotopes and on molten metal target vessels》 (2003), 引用: 19",
+        "total_citations": 19,
+        "h_index": 1,
+        "source_link": "https://www.semanticscholar.org/author/103488817",
+        "name_zh": "克里斯托夫·古德曼",
+        "continent": "Europe"
     },
     "25484": {
         "id": "25484",
@@ -636,7 +833,15 @@
                 "id": "34183",
                 "name": "Weyer, Georg Daniel"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Heinrich Ferdinand Scherk.jpg",
+        "affiliation": "Universität Halle-WittenbergUniversität zu Kiel",
+        "wiki_intro": "Heinrich Ferdinand Scherk (27 October 1798 – 4 October 1885) was a German mathematician notable for his work on minimal surfaces and the distribution of prime numbers. He is also notable as the doctoral advisor of Ernst Kummer....",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "name_zh": "海因里希·费迪南德·舍尔克",
+        "continent": "Europe"
     },
     "29642": {
         "id": "29642",
@@ -663,7 +868,15 @@
                 "id": "7402",
                 "name": "Plücker, Julius"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Christian Ludwig Gerling.jpg",
+        "affiliation": "University of Marburg",
+        "wiki_intro": "Christian Ludwig Gerling (10 July 1788 – 15 January 1864) studied under Carl Friedrich Gauss, obtaining his doctorate in 1812 for his thesis Methodi proiectionis orthographicae usum ad calculos parallacticos facilitandos explicavit simulque eclipsin solarem die at the University of Göttingen. He is ...",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "name_zh": "克里斯蒂安·路德维希·格尔林",
+        "continent": "Europe"
     },
     "17946": {
         "id": "17946",
@@ -694,7 +907,16 @@
                 "id": "59343",
                 "name": "Enneper, Alfred"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Gustav Peter Lejeune Dirichlet.jpg",
+        "affiliation": "University of BreslauUniversity of BerlinUniversity of Göttingen",
+        "wiki_intro": "Johann Peter Gustav Lejeune Dirichlet (/ˌdɪərɪˈkleɪ/;[1] German: [ləˈʒœn diʁiˈkleː];[2] 13 February 1805 – 5 May 1859) was a German mathematician. In number theory, he proved special cases of Fermat's Last Theorem and created analytic number theory. In analysis, he advanced the theory of Fourier ser...",
+        "top_papers": "• 《Vorlesungen über die im umgekehrten Verhältniss des Quadrats der Entfernung wirkenden Kräfte》 (None), 引用: 12\n• 《Vorlesungen über Zahlentheorie / von P. G. Lejeune-Dirichlet. Hrsg. von R. Dedekind》 (None), 引用: 6",
+        "total_citations": 18,
+        "h_index": 2,
+        "source_link": "https://www.semanticscholar.org/author/103394531",
+        "name_zh": "古斯塔夫·彼得·勒琼·狄利克雷",
+        "continent": "Europe"
     },
     "47064": {
         "id": "47064",
@@ -721,7 +943,16 @@
                 "id": "18598",
                 "name": "Bachmann, Paul"
             }
-        ]
+        ],
+        "image_path": "无图片",
+        "affiliation": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+        "wiki_intro": "Martin Ohm (May 6, 1792 in Erlangen – April 1, 1872 in Berlin) was a German mathematician and a younger brother of physicist Georg Ohm....",
+        "top_papers": "• 《Etwas über die Bernoullischen Zahlen.》 (None), 引用: 6\n• 《Versuch eines vollkommen consequenten Systems der Mathematik》 (None), 引用: 5\n• 《Lehrbuch der Arithmetik, Algebra und Analysis: Nach eigenen Prinzipien. Zunächst für seine Vorlesungen bearbeitet》 (1822), 引用: 3",
+        "total_citations": 18,
+        "h_index": 3,
+        "source_link": "https://www.semanticscholar.org/author/91464589",
+        "name_zh": "马丁·欧姆",
+        "continent": "Europe"
     },
     "124490": {
         "id": "124490",
@@ -740,7 +971,15 @@
                 "id": "124285",
                 "name": "Werner, Abraham"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Johann Carl Gehler.jpg",
+        "affiliation": "Universität Leipzig",
+        "wiki_intro": "Johann Carl Gehler (17 May 1732 – 6 May 1796) was a German physician, mineralogist, and anatomist....",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "name_zh": "约翰·卡尔·盖勒",
+        "continent": "Europe"
     },
     "57659": {
         "id": "57659",
@@ -771,7 +1010,15 @@
                 "id": "225895",
                 "name": "Müller, Fooke"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Johann Tobias Mayer.png",
+        "affiliation": "Georg-August-Universität Göttingen",
+        "wiki_intro": "Johann Tobias Mayer (5 May 1752 – 30 November 1830) was a German physicist.[1]...",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "name_zh": "约翰·托拜厄斯·迈耶",
+        "continent": "Europe"
     },
     "57667": {
         "id": "57667",
@@ -802,7 +1049,16 @@
                 "id": "29458",
                 "name": "Gudermann, Christoph"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Bernhard Friedrich Thibaut.jpg",
+        "affiliation": "Georg-August-Universität Göttingen",
+        "wiki_intro": "Bernhard Friedrich Thibaut (22 December 1775 – 4 November 1832) was a German mathematician....",
+        "top_papers": "• 《Investigación sobre la transición en América Latina: enfoques, conceptos, tesis》 (1995), 引用: 5\n• 《Presidencialismo, parlamentarismo y el problema de la consolidación democrática en América Latina》 (2011), 引用: 4\n• 《El problema del desarrollo social y la democracia en América Latina a principios de los años 90》 (1995), 引用: 1",
+        "total_citations": 11,
+        "h_index": 2,
+        "source_link": "https://www.semanticscholar.org/author/104667929",
+        "name_zh": "伯恩哈德·弗里德里希·蒂博",
+        "continent": "Europe"
     },
     "18603": {
         "id": "18603",
@@ -829,7 +1085,16 @@
                 "id": "25484",
                 "name": "Scherk, Heinrich"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Friedrich Wilhelm Bessel.jpg",
+        "affiliation": "University of Königsberg",
+        "wiki_intro": "Friedrich Wilhelm Bessel (German: [ˈbɛsl̩]; 22 July 1784 – 17 March 1846) was a German astronomer, mathematician, physicist, and geodesist. He was the first astronomer who determined reliable values for the distance from the Sun to another star by the method of parallax. Certain important mathematic...",
+        "top_papers": "• 《Bestimmung der Entfernung des 61sten Sterns des Schwans》 (1838), 引用: 50\n• 《Über die Berechnung der geographischen Längen und Breiten aus geodätischen Vermessungen》 (1825), 引用: 17\n• 《Briefwechsel zwischen Gauss und Bessel》 (None), 引用: 17",
+        "total_citations": 189,
+        "h_index": 7,
+        "source_link": "https://www.semanticscholar.org/author/92622354",
+        "name_zh": "弗里德里希·威廉·贝塞尔",
+        "continent": "Europe"
     },
     "65162": {
         "id": "65162",
@@ -852,7 +1117,16 @@
                 "id": "25484",
                 "name": "Scherk, Heinrich"
             }
-        ]
+        ],
+        "image_path": "无图片",
+        "affiliation": "Georg-August-Universität Göttingen",
+        "wiki_intro": "Heinrich Wilhelm Brandes (German: [ˈbʀandəs]; 27 July 1777 – 17 May 1834) was a German physicist, meteorologist, and astronomer....",
+        "top_papers": "• 《Johann Samuel Traugott Gehler's physikalisches Wörterbuch》 (None), 引用: 4\n• 《Kupfer-Atlas zu Johann Samuel Traugott Gehler's physikalischem Wörterbuche》 (None), 引用: 1\n• 《Vorlesungen über die Astronomie, zur Belehrung derjenigen, denen es an mathematischen Vorkenntnissen fehlt》 (1827), 引用: 0",
+        "total_citations": 5,
+        "h_index": 1,
+        "source_link": "https://www.semanticscholar.org/author/123505264",
+        "name_zh": "海因里希·威廉·布兰德斯",
+        "continent": "Europe"
     },
     "18231": {
         "id": "18231",
@@ -879,7 +1153,16 @@
                 "id": "62547",
                 "name": "Encke, Johann"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Carl Friedrich Gauß.jpg",
+        "affiliation": "University of Göttingen",
+        "wiki_intro": "Johann Carl Friedrich Gauss (/ɡaʊs/ ⓘ;[2] German: Gauß; [kaʁl ˈfʁiːdʁɪç ˈɡaʊs] ⓘ;[3][4] Latin: Carolus Fridericus Gauss; 30 April 1777 – 23 February 1855) was a German mathematician, astronomer, geodesist, and physicist, who contributed to many fields in mathematics and science. His mathematical con...",
+        "top_papers": "• 《Theoria combinationis observationum erroribus minimis obnoxiae》 (None), 引用: 302\n• 《Theoria motus corporum coelestium》 (1981), 引用: 179\n• 《METHODUS NOVA INTEGRALIUM VALORES PER APPROXIMATIONEM INVENIENDI》 (2011), 引用: 95",
+        "total_citations": 746,
+        "h_index": 8,
+        "source_link": "https://www.semanticscholar.org/author/2073509490",
+        "name_zh": "卡尔·弗里德里希·高斯",
+        "continent": "Other"
     },
     "17865": {
         "id": "17865",
@@ -910,7 +1193,16 @@
                 "id": "55185",
                 "name": "Liouville, Joseph"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Siméon Denis Poisson.jpg",
+        "affiliation": "École PolytechniqueBureau des LongitudesFaculté des sciences de ParisÉcole de Saint-Cyr",
+        "wiki_intro": "Baron Siméon Denis Poisson (/pwɑːˈsɒ̃/,[1] US also /ˈpwɑːsɒn/; French: [si.me.ɔ̃ də.ni pwa.sɔ̃]; 21 June 1781 – 25 April 1840) was a French mathematician and physicist who worked on statistics, complex analysis, partial differential equations, the calculus of variations, analytical mechanics, electr...",
+        "top_papers": "• 《A treatise of mechanics》 (None), 引用: 22\n• 《Empirical Distributions》 (None), 引用: 5\n• 《English Translation of Poisson's\"Recherches sur la probabilit\\'e des jugements en mati\\`ere criminelle et en mati\\`ere civile\"/\"Researches into the Probabilities of Judgements in Criminal and Civil Cases\"》 (2019), 引用: 0",
+        "total_citations": 27,
+        "h_index": 2,
+        "source_link": "https://www.semanticscholar.org/author/46471716",
+        "name_zh": "西蒙·丹尼斯·泊松",
+        "continent": "Other"
     },
     "17981": {
         "id": "17981",
@@ -933,7 +1225,16 @@
                 "id": "43262",
                 "name": "Plana, Giovanni"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Jean-Baptiste Joseph Fourier.jpg",
+        "affiliation": "École Normale SupérieureÉcole Polytechnique",
+        "wiki_intro": "Jean-Baptiste Joseph Fourier (/ˈfʊrieɪ, -iər/;[1] French: [ʒɑ̃ batist ʒozɛf fuʁje]; 21 March 1768 – 16 May 1830) was a French mathematician and physicist born in Auxerre, Burgundy and best known for initiating the investigation of Fourier series, which eventually developed into Fourier analysis and ...",
+        "top_papers": "• 《Théorie analytique de la chaleur》 (2009), 引用: 1198\n• 《Stanford》 (2007), 引用: 258\n• 《Description de l'Égypte, ou, Recueil de observations et des recherches qui ont été faites en Égypte pendant l'éxpédition de l'armée française,》 (None), 引用: 100",
+        "total_citations": 1875,
+        "h_index": 10,
+        "source_link": "https://www.semanticscholar.org/author/52014259",
+        "name_zh": "让·巴蒂斯特·约瑟夫·傅立叶",
+        "continent": "Other"
     },
     "47025": {
         "id": "47025",
@@ -960,7 +1261,16 @@
                 "id": "90694",
                 "name": "Schweins, Ferdinand"
             }
-        ]
+        ],
+        "image_path": "无图片",
+        "affiliation": "Georg-August-Universität Göttingen and Justus-Liebig-Universität Gießen and Universität Erfurt",
+        "wiki_intro": "未找到 Wiki",
+        "top_papers": "• 《Academic Genealogy of Melvin Leok》 (2004), 引用: 0",
+        "total_citations": 0,
+        "h_index": 0,
+        "source_link": "https://www.semanticscholar.org/author/113101250",
+        "name_zh": "卡尔·克里斯蒂安·冯·朗斯多夫",
+        "continent": "Europe"
     },
     "124845": {
         "id": "124845",
@@ -983,7 +1293,15 @@
                 "id": "124490",
                 "name": "Gehler, Johann"
             }
-        ]
+        ],
+        "image_path": "下载失败",
+        "affiliation": "Universität Leipzig",
+        "wiki_intro": "Christian Gottlieb Ludwig (30 April 1709 – 7 May 1773) was a German physician and botanist born in Brieg, Silesia (now Brzeg, Poland). He was the father of physician/naturalist Christian Friedrich Ludwig (1757–1823) and of Christian L. Ludwig (1749–1784), a physician/scientist known for his translat...",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "name_zh": "克里斯蒂安·戈特利布·路德维希",
+        "continent": "Europe"
     },
     "66476": {
         "id": "66476",
@@ -1010,7 +1328,16 @@
                 "id": "65162",
                 "name": "Brandes, Heinrich"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Abraham Gotthelf Kästner.jpg",
+        "affiliation": "University of LeipzigUniversity of Göttingen",
+        "wiki_intro": "Abraham Gotthelf Kästner (27 September 1719 – 20 June 1800) was a mathematician and epigrammatist from the Holy Roman Empire....",
+        "top_papers": "• 《Gesammelte poetische und prosaische schönwissenschaftliche Werke》 (1971), 引用: 2\n• 《Sitzungsberichte der Heidelberger Akademie der Wissenschaften, Mathematisch-Naturwissenschaftliche Klasse: J. H. Lamberts und A. G. Kaestners Briefe: aus den Gothaer Manuskripten herausgegeben》 (None), 引用: 0",
+        "total_citations": 2,
+        "h_index": 1,
+        "source_link": "https://www.semanticscholar.org/author/103067772",
+        "name_zh": "亚伯拉罕·戈特尔夫·卡斯特纳",
+        "continent": "Europe"
     },
     "65161": {
         "id": "65161",
@@ -1037,7 +1364,16 @@
                 "id": "57659",
                 "name": "Mayer, Johann"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Georg Christoph Lichtenberg.jpg",
+        "affiliation": "University of Göttingen",
+        "wiki_intro": "Georg Christoph Lichtenberg (German: [ˈlɪçtn̩bɛʁk]; 1 July 1742 – 24 February 1799) was a German physicist, satirist, and Anglophile. He was the first person in Germany to hold a professorship explicitly dedicated to experimental physics. He is remembered for his posthumously published notebooks, wh...",
+        "top_papers": "• 《Sicca syndrome in mesangial IgA glomerulonephritis.》 (1985), 引用: 7\n• 《Brulion K (fragmenty)》 (2009), 引用: 0\n• 《Pierwotna angioplastyka - stentować czy nie? Powracające pytanie》 (2007), 引用: 0",
+        "total_citations": 7,
+        "h_index": 1,
+        "source_link": "https://www.semanticscholar.org/author/2084336806",
+        "name_zh": "格奥尔格·克里斯托夫·利希滕贝格",
+        "continent": "Europe"
     },
     "18230": {
         "id": "18230",
@@ -1068,7 +1404,16 @@
                 "id": "51876",
                 "name": "Grunert, Johann"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Johann Friedrich Pfaff.jpg",
+        "affiliation": "University of HelmstedtHalle University",
+        "wiki_intro": "Johann Friedrich Pfaff (sometimes spelled Friederich; 22 December 1765 – 21 April 1825) was a German mathematician. He was described as one of Germany's most eminent mathematicians during the 19th century. He was a precursor of the German school of mathematical thinking, under which Carl Friedrich G...",
+        "top_papers": "• 《Academic Genealogy of Melvin Leok》 (2004), 引用: 0\n• 《Kiri Fr. G. W. Struve'le》 (None), 引用: 0",
+        "total_citations": 0,
+        "h_index": 0,
+        "source_link": "https://www.semanticscholar.org/author/2095807835",
+        "name_zh": "约翰·弗里德里希·普法夫",
+        "continent": "Europe"
     },
     "17864": {
         "id": "17864",
@@ -1095,7 +1440,16 @@
                 "id": "17865",
                 "name": "Poisson, Siméon"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Joseph Louis Lagrange.jpg",
+        "affiliation": "École NormaleÉcole Polytechnique",
+        "wiki_intro": "Joseph-Louis Lagrange[a] (born Giuseppe Luigi Lagrangia[5][b] or Giuseppe Ludovico De la Grange Tournier;[6][c] 25 January 1736 – 10 April 1813), also reported as Giuseppe Luigi Lagrange[7] or Lagrangia,[8] was an Italian and naturalized French mathematician, physicist and astronomer. He made signif...",
+        "top_papers": "• 《Memoire sur la theorie des variations des elements des planetes, et en particulier des variations des grands axes de leurs orbites》 (None), 引用: 18\n• 《Analytical mechanics : translated from the Mécanique analytique, novelle édition of 1811》 (2010), 引用: 15\n• 《[Symptomatic extramedullary haematopoiesis in β-thalassemia: A retrospective single centre study].》 (2016), 引用: 5",
+        "total_citations": 45,
+        "h_index": 4,
+        "source_link": "https://www.semanticscholar.org/author/83659756",
+        "name_zh": "约瑟夫·路易斯·拉格朗日",
+        "continent": "Unknown"
     },
     "108295": {
         "id": "108295",
@@ -1118,7 +1472,16 @@
                 "id": "17865",
                 "name": "Poisson, Siméon"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Pierre-Simon  Laplace.jpg",
+        "affiliation": "École Militaire(1769–1776)",
+        "wiki_intro": "Pierre-Simon, Marquis de Laplace (/ləˈplɑːs/; French: [pjɛʁ simɔ̃ laplas]; 23 March 1749 – 5 March 1827) was a French polymath, a scholar whose work has been instrumental in the fields of physics, astronomy, mathematics,  engineering, statistics, and philosophy. He summarized and extended the work o...",
+        "top_papers": "• 《Functionalization of liquid-exfoliated two-dimensional 2H-MoS2.》 (2015), 引用: 227\n• 《From the Rise of the Group Concept to the Stormy Onset of Group Theory in the New Quantum Mechanics. A saga of the invariant characterization of physical objects, events and theories.》 (2004), 引用: 23\n• 《Hydrophobic perfluoro-silane functionalization of porous silicon photoluminescent films and particles》 (2016), 引用: 16",
+        "total_citations": 1627,
+        "h_index": 10,
+        "source_link": "https://www.semanticscholar.org/author/12461731",
+        "name_zh": "皮埃尔·西蒙·拉普拉斯",
+        "continent": "Europe"
     },
     "125001": {
         "id": "125001",
@@ -1132,7 +1495,14 @@
                 "id": "124845",
                 "name": "Ludwig, Christian"
             }
-        ]
+        ],
+        "image_path": "无图片",
+        "wiki_intro": "未找到 Wiki",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "name_zh": "克里斯托夫·弗里德里希·哈斯",
+        "continent": "Unknown"
     },
     "125002": {
         "id": "125002",
@@ -1155,7 +1525,15 @@
                 "id": "201934",
                 "name": "Pohl, Johann Christoph"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Augustin Friedrich Walther.jpg",
+        "affiliation": "Martin-Luther-Universität Halle-Wittenberg",
+        "wiki_intro": "Augustin Friedrich Walther (26 October 1688 – 12 October 1746) was a German anatomist,[1][2] botanist and physician who was a native of Wittenberg, Electorate of Saxony. He was the son of theologian Michael Walther the Younger (1638–1692)....",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "name_zh": "奥古斯丁·弗里德里希·瓦尔特",
+        "continent": "Europe"
     },
     "57670": {
         "id": "57670",
@@ -1186,7 +1564,16 @@
                 "id": "66476",
                 "name": "Kästner, Abraham"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Christian August Hausen.jpg",
+        "affiliation": "University of Leipzig",
+        "wiki_intro": "Christian August Hausen (1693–1743) was a German mathematician who is known for his research on electricity....",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "source_link": "https://www.semanticscholar.org/author/146374184",
+        "name_zh": "克里斯蒂安·奥古斯特·豪森",
+        "continent": "Europe"
     },
     "127710": {
         "id": "127710",
@@ -1209,7 +1596,16 @@
                 "id": "206303",
                 "name": "von Soldner, Johann"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Johann Elert Bode.jpg",
+        "affiliation": "Handelsakademie Hamburg",
+        "wiki_intro": "Johann Elert Bode (German: [ˈboːdə]; 19 January 1747 – 23 November 1826) was a German astronomer known for his reformulation and popularisation of the Titius–Bode law.  Bode determined the orbit of Uranus and suggested the planet's name....",
+        "top_papers": "• 《Ueber einige Abkömmlinge des Neurins und Cholins》 (None), 引用: 17\n• 《Anleitung zur kenntniss des gestirnten himmels》 (None), 引用: 7\n• 《Von dem neuen, zwischen Mars und Jupiter entdeckten achten Hauptplaneten des Sonnensystems》 (None), 引用: 3",
+        "total_citations": 31,
+        "h_index": 3,
+        "source_link": "https://www.semanticscholar.org/author/134137048",
+        "name_zh": "约翰·埃勒特·博德",
+        "continent": "Europe"
     },
     "38586": {
         "id": "38586",
@@ -1236,7 +1632,16 @@
                 "id": "112812",
                 "name": "Hennert, Johann"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Leonhard  Euler.jpg",
+        "affiliation": "Imperial Russian Academy of SciencesBerlin Academy",
+        "wiki_intro": "Leonhard Euler (/ˈɔɪlər/ OY-lər;[b] 15 April 1707 – 18 September 1783) was a Swiss polymath who was active as a mathematician, physicist, astronomer, logician, geographer, and engineer. He founded the studies of graph theory and topology and made influential discoveries in many other branches of mat...",
+        "top_papers": "• 《Opuscula varii argumenti ...》 (1975), 引用: 7\n• 《Reflexiones sobre el espacio, la fuerza y la materia》 (1985), 引用: 6\n• 《Introducción al análisis de los infinitos》 (2000), 引用: 5",
+        "total_citations": 31,
+        "h_index": 3,
+        "source_link": "https://www.semanticscholar.org/author/2070632954",
+        "name_zh": "莱昂哈德·欧拉",
+        "continent": "Europe"
     },
     "108266": {
         "id": "108266",
@@ -1255,7 +1660,16 @@
                 "id": "108295",
                 "name": "Laplace, Pierre-Simon"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Jean Le Rond d'Alembert.jpg",
+        "affiliation": "Collège Mazarin",
+        "wiki_intro": "Jean Le Rond d'Alembert[a] (/ˌdæləmˈbɛər/ DAL-əm-BAIR;[2] French: [ʒɑ̃ lə ʁɔ̃ dalɑ̃bɛʁ]; 16 November 1717 – 29 October 1783) was a French mathematician, mechanician, physicist, philosopher, and music theorist. Until 1759 he was, together with Denis Diderot, a co-editor of the Encyclopédie.[3] D'Alem...",
+        "top_papers": "未找到学术数据",
+        "total_citations": 8,
+        "h_index": 2,
+        "source_link": "https://www.semanticscholar.org/author/1409041416",
+        "name_zh": "让·勒隆·达朗贝尔",
+        "continent": "Other"
     },
     "125107": {
         "id": "125107",
@@ -1274,7 +1688,15 @@
                 "id": "125002",
                 "name": "Walther, Augustin"
             }
-        ]
+        ],
+        "image_path": "无图片",
+        "affiliation": "Martin-Luther-University Halle-Wittenberg",
+        "wiki_intro": "Johann Gottfried von Berger (November 11, 1659 – October 2, 1736) was a German physician and writer on physiology who was an early follower of the iatromechanical explanation of human organ functioning. Berger was born in Halle an der Saale and was educated at Jena (1682) and Leipzig. He became a pr...",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "name_zh": "约翰·戈特弗里德·冯·伯格",
+        "continent": "Europe"
     },
     "72669": {
         "id": "72669",
@@ -1293,7 +1715,15 @@
                 "id": "57670",
                 "name": "Hausen, Christian"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Johann Christoph Wichmannshausen.jpg",
+        "affiliation": "University of Wittenberg",
+        "wiki_intro": "Johann Christoph Wichmannshausen (October 3, 1663 – January 17, 1727) was a 17th-century German philologist....",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "name_zh": "约翰·克里斯托夫·维希曼斯豪森",
+        "continent": "Europe"
     },
     "128986": {
         "id": "128986",
@@ -1316,7 +1746,15 @@
                 "id": "129079",
                 "name": "Weidlerus, Johannes"
             }
-        ]
+        ],
+        "image_path": "无图片",
+        "affiliation": "Martin-Luther-Universität Halle-Wittenberg",
+        "wiki_intro": "未找到 Wiki",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "name_zh": "约翰·安德烈亚斯·普兰纳",
+        "continent": "Europe"
     },
     "127668": {
         "id": "127668",
@@ -1335,7 +1773,16 @@
                 "id": "127710",
                 "name": "Bode, Johann"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Johann Georg Büsch.JPG",
+        "affiliation": "Georg-August-Universität Göttingen",
+        "wiki_intro": "Johann Georg Büsch (January 3, 1728 at Alten-Weding in Hanover – August 5, 1800 in Hamburg) was a German mathematics teacher and writer on statistics and commerce....",
+        "top_papers": "• 《Abhandlung von dem Geldumlauf》 (1975), 引用: 4\n• 《Der Einfluß von Atropin auf die Reaktion des Skelettmuskels bei direkter Reizung》 (1927), 引用: 3\n• 《Theoretisch-praktische Darstellung der Handlung in deren mannigfaltigen Geschäften》 (None), 引用: 3",
+        "total_citations": 15,
+        "h_index": 3,
+        "source_link": "https://www.semanticscholar.org/author/134139876",
+        "name_zh": "约翰·格奥尔格·布施",
+        "continent": "Europe"
     },
     "53410": {
         "id": "53410",
@@ -1366,7 +1813,16 @@
                 "id": "113403",
                 "name": "Hoorn, Henricus"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Johann  Bernoulli.jpg",
+        "affiliation": "University of GroningenUniversity of Basel",
+        "wiki_intro": "Johann Bernoulli[a] (also known as Jean in French or John in English; 6 August [O.S. 27 July] 1667 – 1 January 1748) was a Swiss mathematician and was one of the many prominent mathematicians in the Bernoulli family. He is known for his contributions to infinitesimal calculus and educating Leonhard ...",
+        "top_papers": "• 《Stanford》 (2007), 引用: 258\n• 《Der Briefwechsel. Band 3: Der Briefwechsel mit Pierre Varignon. Zweiter Teil: 1702-1714. (Die gesammelten Werke der Matbematiker und Physiker der Familie Bernoulli)》 (1993), 引用: 1\n• 《Unedirter Brief des berühmten Mathematikers Joh. Bernoulli (geb. 1667, gest. 1748) an Leonhard Euler in St. Petersburg.》 (None), 引用: 1",
+        "total_citations": 259,
+        "h_index": 1,
+        "source_link": "https://www.semanticscholar.org/author/2033867576",
+        "name_zh": "约翰·伯努利",
+        "continent": "Europe"
     },
     "294942": {
         "id": "294942",
@@ -1385,7 +1841,15 @@
                 "id": "108266",
                 "name": "d'Alembert, Jean"
             }
-        ]
+        ],
+        "image_path": "无图片",
+        "affiliation": "Collège Mazarin",
+        "wiki_intro": "未找到 Wiki",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "name_zh": "莱昂诺·卡伦",
+        "continent": "Other"
     },
     "125143": {
         "id": "125143",
@@ -1408,7 +1872,15 @@
                 "id": "125107",
                 "name": "von Berger, Johann"
             }
-        ]
+        ],
+        "image_path": "无图片",
+        "affiliation": "Friedrich-Schiller-Universität Jena",
+        "wiki_intro": "未找到 Wiki",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "name_zh": "奥古斯丁·海因里希·法施",
+        "continent": "Europe"
     },
     "21235": {
         "id": "21235",
@@ -1431,7 +1903,16 @@
                 "id": "72669",
                 "name": "Wichmannshausen, Johann"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Otto  Mencke.jpg",
+        "affiliation": "University of Leipzig",
+        "wiki_intro": "Otto Mencke (English: /ˈmɛŋkə/; German: [ˈmɛŋkə]; 22 March 1644 – 18 January 1707) was a 17th-century German philosopher and scientist....",
+        "top_papers": "• 《Academic Genealogy of Melvin Leok》 (2004), 引用: 0",
+        "total_citations": 0,
+        "h_index": 0,
+        "source_link": "https://www.semanticscholar.org/author/1393716872",
+        "name_zh": "奥托·门克",
+        "continent": "Europe"
     },
     "128046": {
         "id": "128046",
@@ -1450,7 +1931,15 @@
                 "id": "128986",
                 "name": "Planer, Johann"
             }
-        ]
+        ],
+        "image_path": "无图片",
+        "affiliation": "Martin-Luther-Universität Halle-Wittenberg",
+        "wiki_intro": "未找到 Wiki",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "name_zh": "约翰·帕什",
+        "continent": "Europe"
     },
     "60782": {
         "id": "60782",
@@ -1477,7 +1966,16 @@
                 "id": "60815",
                 "name": "Niemeyer, August"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Johann Andreas Segner.jpg",
+        "affiliation": "JenaGöttingenHalle",
+        "wiki_intro": "Johann Andreas von Segner (Hungarian: Segner János András, German: Johann Andreas von Segner, Slovak: Ján Andrej Segner, Latin: Iohannes Andreas de Segner; October 9, 1704 – October 5, 1777) was a Hungarian scientist of German descent. He was born in the Kingdom of Hungary, in the former Hungarian c...",
+        "top_papers": "• 《IX. Ad eclipses terræ repræsentandas, Machina J. And. Segneri, Med. Physic. & Mathem .Prof. Goetting, R. S. S.》 (None), 引用: 0",
+        "total_citations": 0,
+        "h_index": 0,
+        "source_link": "https://www.semanticscholar.org/author/2098720132",
+        "name_zh": "约翰·安德烈亚斯·塞格纳",
+        "continent": "Europe"
     },
     "54440": {
         "id": "54440",
@@ -1504,7 +2002,16 @@
                 "id": "96720",
                 "name": "Hermann, Jacob"
             }
-        ]
+        ],
+        "image_path": "output_final\\images\\Jacob  Bernoulli.jpg",
+        "affiliation": "University of Basel",
+        "wiki_intro": "Jacob Bernoulli[a] (also known as James in English or Jacques in French; 6 January 1655 [O.S. 27 December 1654] – 16 August 1705) was a Swiss mathematician. He sided with Gottfried Wilhelm Leibniz during the Leibniz–Newton calculus controversy and was an early proponent of Leibnizian calculus, to wh...",
+        "top_papers": "• 《Stanford》 (2007), 引用: 258\n• 《Der Briefwechsel. Band 3: Der Briefwechsel mit Pierre Varignon. Zweiter Teil: 1702-1714. (Die gesammelten Werke der Matbematiker und Physiker der Familie Bernoulli)》 (1993), 引用: 1\n• 《Abhandlungen ueber Variations=Rechnung. I. Abhandlungen von Joh. Bernoulli (1696), Jac. Bernoulli (1697) und Leonhard Euler (1744)》 (None), 引用: 0",
+        "total_citations": 259,
+        "h_index": 1,
+        "source_link": "https://www.semanticscholar.org/author/134135545",
+        "name_zh": "雅各布·伯努利",
+        "continent": "Europe"
     },
     "129628": {
         "id": "129628",
@@ -1527,6 +2034,14 @@
                 "id": "53410",
                 "name": "Bernoulli, Johann"
             }
-        ]
+        ],
+        "image_path": "无图片",
+        "affiliation": "University of Basel",
+        "wiki_intro": "Nikolaus Eglinger (Swiss Standard German: [ˈeːɡlɪŋər]; 1645–1711) was a Swiss physician, based in Basel....",
+        "top_papers": "未找到学术数据",
+        "total_citations": 0,
+        "h_index": 0,
+        "name_zh": "尼古拉斯·埃格林格",
+        "continent": "Europe"
     }
 }

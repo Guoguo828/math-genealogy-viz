@@ -24,11 +24,21 @@ document.addEventListener('DOMContentLoaded', function() {
             for (const [id, person] of Object.entries(rawData)) {
                 // 添加学生节点 (有详细数据的节点)
                 if (!addedNodes.has(id)) {
+                    // Use Chinese name if available for label, or append it
+                    // Let's just use English name for label to keep graph clean, 
+                    // but maybe show Chinese in title or search.
+                    // User asked for "add Chinese translation", maybe they want to see it.
+                    // Let's append it if it exists and is different.
+                    let label = person.name;
+                    if (person.name_zh && person.name_zh !== person.name) {
+                        label += `\n(${person.name_zh})`;
+                    }
+
                     nodes.push({ 
                         id: id, 
-                        label: person.name, 
+                        label: label, 
                         group: 'student',
-                        title: `ID: ${id}\nYear: ${person.year || 'Unknown'}`, // 鼠标悬停显示
+                        title: `ID: ${id}\nYear: ${person.year || 'Unknown'}\nName: ${person.name_zh || ''}`, // 鼠标悬停显示
                         color: getColorByYear(person.year)
                     });
                     addedNodes.add(id);
@@ -39,20 +49,20 @@ document.addEventListener('DOMContentLoaded', function() {
                     person.advisors.forEach(advisor => {
                         // 确保导师节点也存在
                         if (!addedNodes.has(advisor.id)) {
-                            // 尝试从 rawData 中查找导师的详细信息（如果存在）以获取年份
-                            // 注意：当前的 JSON 结构中，advisor 只是一个简单的对象 {id, name}，
-                            // 除非它也是 rawData 的一个键。
-                            // 如果导师也是 rawData 的一个键，我们会在主循环中处理它。
-                            // 但为了防止它还没被处理就被作为 advisor 添加了，我们需要检查。
-                            
                             let advisorYear = null;
+                            let advisorLabel = advisor.name;
+                            
+                            // Check if we have full data for advisor to get Chinese name
                             if (rawData[advisor.id]) {
                                 advisorYear = rawData[advisor.id].year;
+                                if (rawData[advisor.id].name_zh && rawData[advisor.id].name_zh !== rawData[advisor.id].name) {
+                                    advisorLabel += `\n(${rawData[advisor.id].name_zh})`;
+                                }
                             }
 
                             nodes.push({ 
                                 id: advisor.id, 
-                                label: advisor.name, 
+                                label: advisorLabel, 
                                 group: 'advisor',
                                 color: getColorByYear(advisorYear)
                             });
@@ -156,6 +166,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // 4. 渲染图表
             const network = new vis.Network(container, data, options);
+            
+            // Hide loading overlay when drawing is complete
+            network.once("afterDrawing", function() {
+                const overlay = document.getElementById('loading-overlay');
+                if (overlay) {
+                    overlay.style.opacity = '0';
+                    setTimeout(() => {
+                        overlay.style.display = 'none';
+                    }, 500);
+                }
+            });
 
             // 优化1: 控制栏功能
             document.getElementById('reset-view-btn').addEventListener('click', () => {
@@ -275,8 +296,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     } else {
                         updateArray.push({
                             id: node.id, 
-                            color: { background: '#eeeeee', border: '#dddddd' },
-                            opacity: 0.1
+                            color: { background: '#e0e0e0', border: '#cccccc' },
+                            opacity: 0.4
                         });
                     }
                 });
@@ -320,6 +341,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     const year = person.year ? `<p><strong>Year:</strong> ${person.year}</p>` : '';
                     const dissertation = person.dissertation ? `<p><strong>Dissertation:</strong> <i>${person.dissertation}</i></p>` : '';
                     
+                    // Display Chinese name if available
+                    const nameDisplay = (person.name_zh && person.name_zh !== person.name) 
+                        ? `${person.name}<br><span style="font-size: 0.85rem; color: #666; font-weight: normal;">${person.name_zh}</span>`
+                        : person.name;
+
                     let advisorsHtml = '';
                     if (person.advisors && person.advisors.length > 0) {
                         advisorsHtml = '<h3>Advisors:</h3><ul>' + 
@@ -335,7 +361,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                     
                     content = `
-                        <h2>${person.name}</h2>
+                        <h2>${nameDisplay}</h2>
                         <div class="person-meta">
                             <p><strong>ID:</strong> ${person.id}</p>
                             ${school}
@@ -349,6 +375,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                         ${advisorsHtml}
                         ${studentsHtml}
+                        <button id="view-full-details-btn" class="view-details-btn" data-id="${person.id}">View Full Details</button>
                     `;
                 } else {
                     // 如果是未爬取的导师节点，尝试从 vis data 中获取基本信息
@@ -367,6 +394,153 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 }
                 detailsContainer.innerHTML = content;
+
+                // Bind click event for View Details button
+                const viewBtn = document.getElementById('view-full-details-btn');
+                if (viewBtn) {
+                    viewBtn.addEventListener('click', function() {
+                        const id = this.getAttribute('data-id');
+                        openModal(rawData[id]);
+                    });
+                }
+            }
+
+            // --- Modal Logic ---
+            const modal = document.getElementById("details-modal");
+            const closeModalSpan = document.getElementsByClassName("close-modal")[0];
+
+            function openModal(person) {
+                if (!person) return;
+
+                const nameDisplay = (person.name_zh && person.name_zh !== person.name) 
+                    ? `${person.name} (${person.name_zh})`
+                    : (person.name || 'Unknown');
+
+                document.getElementById('modal-name').textContent = nameDisplay;
+                document.getElementById('modal-id').textContent = person.id || '-';
+                document.getElementById('modal-year').textContent = person.year || '-';
+                document.getElementById('modal-school').textContent = person.school || '-';
+                document.getElementById('modal-hindex').textContent = person.h_index || '-';
+                document.getElementById('modal-citations').textContent = person.total_citations || '-';
+                document.getElementById('modal-affiliation').textContent = person.affiliation || '-';
+                document.getElementById('modal-wiki').textContent = person.wiki_intro || 'No biography available.';
+
+                // Image handling
+                const img = document.getElementById('modal-image');
+                if (person.image_path && person.image_path !== "无图片") {
+                    const filename = person.image_path.split('\\').pop().split('/').pop();
+                    img.src = `/images/${filename}`;
+                    img.style.display = 'block';
+                } else {
+                    img.src = 'https://via.placeholder.com/300x400?text=No+Image';
+                }
+
+                // Papers
+                const papersList = document.getElementById('modal-papers');
+                papersList.innerHTML = '';
+                if (person.top_papers && person.top_papers !== "未找到学术数据") {
+                    const papers = person.top_papers.split('\n').filter(p => p.trim() !== '');
+                    papers.forEach(p => {
+                        const li = document.createElement('li');
+                        li.textContent = p;
+                        papersList.appendChild(li);
+                    });
+                } else {
+                    const li = document.createElement('li');
+                    li.textContent = 'No papers listed.';
+                    papersList.appendChild(li);
+                }
+
+                // Links
+                const linksContainer = document.getElementById('modal-links');
+                linksContainer.innerHTML = '';
+                if (person.source_link) {
+                    const links = person.source_link.split('\n').filter(l => l.trim() !== '');
+                    links.forEach(link => {
+                        const a = document.createElement('a');
+                        a.href = link;
+                        a.target = '_blank';
+                        a.textContent = link;
+                        a.style.display = 'block';
+                        a.style.marginBottom = '5px';
+                        a.style.wordBreak = 'break-all';
+                        linksContainer.appendChild(a);
+                    });
+                }
+
+                // Add Advisors and Students to Modal for Navigation
+                // We'll append them to the info-grid or a new section
+                // Let's check if we already have a container for them in HTML.
+                // The HTML structure is fixed in index.html.
+                // We can dynamically add a section to .modal-info if needed, or just reuse existing logic.
+                // But wait, the modal HTML structure I added earlier didn't have Advisors/Students sections.
+                // I should add them.
+                
+                // Let's create a new section for Relations if it doesn't exist
+                let relationsSection = document.getElementById('modal-relations');
+                if (!relationsSection) {
+                    relationsSection = document.createElement('div');
+                    relationsSection.id = 'modal-relations';
+                    relationsSection.className = 'info-section';
+                    // Insert before Links
+                    const linksSection = linksContainer.parentElement; // .info-section
+                    linksSection.parentElement.insertBefore(relationsSection, linksSection);
+                }
+                
+                let relationsHtml = '<h3>Academic Relations</h3><div class="info-grid">';
+                
+                // Advisors
+                if (person.advisors && person.advisors.length > 0) {
+                    relationsHtml += '<div class="info-item"><label>Advisors</label>';
+                    person.advisors.forEach(a => {
+                        relationsHtml += `<div><a href="#" class="modal-nav-link" data-id="${a.id}">${a.name}</a></div>`;
+                    });
+                    relationsHtml += '</div>';
+                }
+                
+                // Students
+                if (person.students && person.students.length > 0) {
+                    relationsHtml += '<div class="info-item"><label>Students</label>';
+                    person.students.forEach(s => {
+                        relationsHtml += `<div><a href="#" class="modal-nav-link" data-id="${s.id}">${s.name}</a></div>`;
+                    });
+                    relationsHtml += '</div>';
+                }
+                relationsHtml += '</div>';
+                relationsSection.innerHTML = relationsHtml;
+
+                // Bind click events for navigation
+                const navLinks = relationsSection.querySelectorAll('.modal-nav-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const targetId = link.getAttribute('data-id');
+                        modal.style.display = "none"; // Close modal
+                        
+                        // Navigate to node
+                        // Check if node exists in dataset
+                        if (data.nodes.get(targetId)) {
+                            network.selectNodes([targetId]);
+                            updateDetails(targetId);
+                            focusNode(targetId);
+                            highlightLineage(targetId);
+                        } else {
+                            alert("Node not found in the current graph.");
+                        }
+                    });
+                });
+
+                modal.style.display = "block";
+            }
+
+            closeModalSpan.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
             }
 
             // --- 功能函数：聚焦节点 ---
@@ -434,25 +608,41 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('node-popup').style.display = 'none';
             });
 
-            // 6. 搜索功能实现
+            // 6. 搜索功能实现 (Enhanced with Fuse.js)
             const searchInput = document.getElementById('search-input');
             const searchBtn = document.getElementById('search-btn');
 
+            // Prepare data for Fuse.js
+            const searchData = Object.values(rawData).map(p => ({
+                id: p.id,
+                name: p.name,
+                name_zh: p.name_zh || '',
+                school: p.school || '',
+                year: p.year ? p.year.toString() : ''
+            }));
+
+            const fuseOptions = {
+                keys: ['name', 'name_zh', 'school', 'id'],
+                threshold: 0.3, // Fuzzy match threshold
+                distance: 100
+            };
+            const fuse = new Fuse(searchData, fuseOptions);
+
             function performSearch() {
-                const query = searchInput.value.trim().toLowerCase();
+                const query = searchInput.value.trim();
                 if (!query) return;
 
-                const allNodes = data.nodes.get();
-                // 模糊匹配：查找名字中包含查询字符串的节点
-                const foundNode = allNodes.find(node => node.label.toLowerCase().includes(query));
+                const results = fuse.search(query);
 
-                if (foundNode) {
+                if (results.length > 0) {
+                    const foundItem = results[0].item;
                     // 选中节点
-                    network.selectNodes([foundNode.id]);
+                    network.selectNodes([foundItem.id]);
                     // 更新详情
-                    updateDetails(foundNode.id);
+                    updateDetails(foundItem.id);
                     // 聚焦节点
-                    focusNode(foundNode.id);
+                    focusNode(foundItem.id);
+                    highlightLineage(foundItem.id);
                 } else {
                     alert('Mathematician not found!');
                 }
@@ -464,6 +654,115 @@ document.addEventListener('DOMContentLoaded', function() {
                     performSearch();
                 }
             });
+
+            // --- Statistics Charts ---
+            const statsBtn = document.getElementById('stats-btn');
+            const statsModal = document.getElementById('stats-modal');
+            const closeStatsSpan = document.getElementById('close-stats');
+
+            statsBtn.addEventListener('click', () => {
+                statsModal.style.display = 'block';
+                renderCharts();
+            });
+
+            closeStatsSpan.onclick = function() {
+                statsModal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == statsModal) {
+                    statsModal.style.display = "none";
+                }
+                if (event.target == modal) { // Existing modal
+                    modal.style.display = "none";
+                }
+            }
+
+            let chartsRendered = false;
+            function renderCharts() {
+                if (chartsRendered) return;
+
+                // 1. Years Distribution
+                const years = [];
+                Object.values(rawData).forEach(p => {
+                    if (p.year) years.push(p.year);
+                });
+                // Group by century
+                const centuries = {};
+                years.forEach(y => {
+                    const c = Math.floor(y / 100) * 100;
+                    const label = `${c}s`;
+                    centuries[label] = (centuries[label] || 0) + 1;
+                });
+                // Sort
+                const sortedCenturies = Object.keys(centuries).sort();
+                const centuryData = sortedCenturies.map(c => centuries[c]);
+
+                new Chart(document.getElementById('chart-years'), {
+                    type: 'bar',
+                    data: {
+                        labels: sortedCenturies,
+                        datasets: [{
+                            label: 'Scholars Count',
+                            data: centuryData,
+                            backgroundColor: '#4a90e2'
+                        }]
+                    },
+                    options: { responsive: true }
+                });
+
+                // 2. Top Schools
+                const schools = {};
+                Object.values(rawData).forEach(p => {
+                    if (p.school) {
+                        // Normalize school name slightly
+                        const s = p.school.trim();
+                        schools[s] = (schools[s] || 0) + 1;
+                    }
+                });
+                const sortedSchools = Object.entries(schools)
+                    .sort((a, b) => b[1] - a[1])
+                    .slice(0, 10);
+                
+                new Chart(document.getElementById('chart-schools'), {
+                    type: 'bar',
+                    data: {
+                        labels: sortedSchools.map(s => s[0]),
+                        datasets: [{
+                            label: 'Scholars Count',
+                            data: sortedSchools.map(s => s[1]),
+                            backgroundColor: '#6bd692'
+                        }]
+                    },
+                    options: { 
+                        indexAxis: 'y',
+                        responsive: true 
+                    }
+                });
+
+                // 3. Geographic Distribution (Continent)
+                const continents = {};
+                Object.values(rawData).forEach(p => {
+                    const c = p.continent || 'Unknown';
+                    continents[c] = (continents[c] || 0) + 1;
+                });
+                
+                new Chart(document.getElementById('chart-continents'), {
+                    type: 'doughnut',
+                    data: {
+                        labels: Object.keys(continents),
+                        datasets: [{
+                            data: Object.values(continents),
+                            backgroundColor: [
+                                '#ff9a9e', '#fad0c4', '#fbc2eb', '#a18cd1', '#84fab0', '#8fd3f4', '#e0e0e0'
+                            ]
+                        }]
+                    },
+                    options: { responsive: true }
+                });
+
+                chartsRendered = true;
+            }
         })
         .catch(error => console.error('Error loading the genealogy data:', error));
 });
