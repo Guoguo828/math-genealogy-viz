@@ -254,8 +254,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 const queueUp = [selectedNodeId];
                 while(queueUp.length > 0) {
                     const curr = queueUp.pop();
-                    // 找到指向 curr 的边 (from student to advisor, so edge.from == curr)
-                    // 我们的边是 from student to advisor
                     const outgoingEdges = allEdges.filter(e => e.from === curr);
                     outgoingEdges.forEach(e => {
                         connectedEdgeIds.add(e.id);
@@ -270,7 +268,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 const queueDown = [selectedNodeId];
                 while(queueDown.length > 0) {
                     const curr = queueDown.pop();
-                    // 找到指向 curr 的边 (edge.to == curr)
                     const incomingEdges = allEdges.filter(e => e.to === curr);
                     incomingEdges.forEach(e => {
                         connectedEdgeIds.add(e.id);
@@ -302,6 +299,24 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 });
                 data.nodes.update(updateArray);
+
+                // 更新边样式：只有当两个端点都在 connectedNodeIds 中时才亮起
+                const edgeUpdateArray = allEdges.map(edge => {
+                    if (connectedNodeIds.has(edge.from) && connectedNodeIds.has(edge.to)) {
+                        return {
+                            id: edge.id,
+                            color: { opacity: 1 },
+                            width: 2.5
+                        };
+                    } else {
+                        return {
+                            id: edge.id,
+                            color: { opacity: 0.1 },
+                            width: 1
+                        };
+                    }
+                });
+                data.edges.update(edgeUpdateArray);
                 
                 highlightActive = true;
                 resetBtn.style.display = 'inline-block';
@@ -311,14 +326,24 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (!highlightActive) return;
                 
                 const allNodes = data.nodes.get();
-                const updateArray = allNodes.map(node => {
+                const nodeUpdateArray = allNodes.map(node => {
                     return {
                         id: node.id,
                         color: node.originalColor || node.color,
                         opacity: 1
                     };
                 });
-                data.nodes.update(updateArray);
+                data.nodes.update(nodeUpdateArray);
+
+                const allEdges = data.edges.get();
+                const edgeUpdateArray = allEdges.map(edge => {
+                    return {
+                        id: edge.id,
+                        color: { opacity: 1 },
+                        width: 2
+                    };
+                });
+                data.edges.update(edgeUpdateArray);
                 
                 highlightActive = false;
                 resetBtn.style.display = 'none';
